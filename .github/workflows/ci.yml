@@ -1,0 +1,68 @@
+name: Checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: checks-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  workbench:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - uses: astral-sh/setup-uv@v6
+        with:
+          version: '0.12.10'
+          enable-cache: true
+      - name: Install pinned dependencies and sources
+        run: |
+          npm ci
+          python3 scripts/fetch_upstream.py
+          uv sync --locked
+      - name: Build the workbench
+        run: npm run build
+      - name: Check CPU policies and geometry
+        run: uv run python -m pytest -q
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+      - name: Check browser and live CPU controls
+        run: |
+          mkdir -p artifacts
+          uv run python -m lab.server > artifacts/ci-server.log 2>&1 &
+          simulation_pid=$!
+          trap 'kill "$simulation_pid" 2>/dev/null || true' EXIT
+          python3 - <<'PY'
+          import time
+          import urllib.error
+          import urllib.request
+          for attempt in range(60):
+              try:
+                  with urllib.request.urlopen('http://127.0.0.1:8000/api/health', timeout=2) as response:
+                      if response.status == 200:
+                          break
+              except (urllib.error.URLError, TimeoutError):
+                  pass
+              time.sleep(1)
+          else:
+              raise SystemExit('CPU service did not start')
+          PY
+          npm run test:e2e
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: validation-failure
+          path: artifacts/
+          retention-days: 7

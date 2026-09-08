@@ -16,6 +16,7 @@ This is the evidence produced in the current workspace on 2026-09-08. It separat
 | China delivered-cost calculator and retained budget | PASS — 3 relevant browser tests | China calculator covers pending charges, savings, losses and invalid exchange rate; existing budget/CSV/persistence and mobile checks pass. CPU/robot-runtime suites were not repeated for this procurement addition |
 | China and US document navigation | PASS | 34 local link checks return HTTP 200; China/US document layouts at 390 px and Parts with expanded calculator at 390/768/1024/1440 px have no document overflow or page errors; artifacts/china-browser-audit.json |
 | Existing US resources preserved | PASS | SHA-256 unchanged for docs/PROCUREMENT_US.md, hardware/procurement-us.csv and all three full-print/fit-check/HAT quote ZIPs; no model regeneration |
+| Public repository preparation | PASS locally | Production build, 5 Python tests and all 6 browser tests (including live CPU controls); workflow linted with actionlint v1.7.12; original X links, README/notice links and unchanged US/quote resources checked. Hosted CI has not yet run |
 | Policy hashes / `[1,61] → [1,14]` | PASS | `uv run python -m pytest -q` |
 | Upstream observation parity | PASS | `tests/test_robot.py` |
 | 20 s standing CPU rollout | PASS | `docs/validation-results.json` |

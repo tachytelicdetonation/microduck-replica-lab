@@ -14,6 +14,11 @@ await cp(
   new URL("../THIRD_PARTY_NOTICES.md", import.meta.url),
   new URL("../public/THIRD_PARTY_NOTICES.md", import.meta.url),
 );
+await cp(
+  new URL("../LICENSES/", import.meta.url),
+  new URL("../public/LICENSES/", import.meta.url),
+  { recursive: true },
+);
 
 // Render the authored purchasing documents for browsers. This small renderer
 // handles their headings, paragraphs, lists and tables; Markdown remains canonical.
