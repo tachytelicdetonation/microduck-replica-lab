@@ -4,6 +4,18 @@ A local replication project for the seven-part Microduck series by [yishan / @ts
 
 **Start with the assembly explorer and CPU simulation.** The physical robot still requires fabrication, components, calibration and a validated IMU bridge. No hardware has been assembled or tested by this project.
 
+## Original series sources
+
+These are the seven source posts this replica workbench follows:
+
+1. [Microduck Robot Software Architecture Analysis](https://x.com/tspy/status/2093222346501107739)
+2. [Microduck Robot Structure Exploded View](https://x.com/tspy/status/2094249218735300630)
+3. [Microduck Robot Component Cost Estimation](https://x.com/tspy/status/2094591561908748588)
+4. [Microduck Robot Reverse-Engineered 3D Materials](https://x.com/tspy/status/2094709164501254518)
+5. [Microduck Robot Structure Visualization](https://x.com/tspy/status/2096238855519453662)
+6. [Microduck Robot Reinforcement Training and Simulation](https://x.com/tspy/status/2095728806971806133)
+7. [DIY Replicating the Microduck Robot from Scratch](https://x.com/tspy/status/2094963381220622638)
+
 For purchasing in the **United States**, use the [shopping and assembly supply guide](docs/PROCUREMENT_US.md), [shopping checklist CSV](hardware/procurement-us.csv), and [print quote pack](public/models/microduck-print-quote.zip). You can order prints from a service without buying a printer. The pack contains 30 reference design types for 36 modeled pieces; it requires a fit-check batch before a full fabrication order.
 
 For China procurement delivered to the US, use the [China sourcing and landed-cost comparison](docs/PROCUREMENT_CN.md), [China checklist CSV](hardware/procurement-cn.csv) and delivered-cost calculator on the Parts & costs page. The addendum distinguishes community price snapshots from checked service pages and quotes still needed. China printing options include domestic JLC, JLC3DP and PCBWay; compare the same materials and quantities with freight and import charges. The US guide and fabrication packs are retained. Regenerate only the China CSV with `python3 scripts/export_china_procurement.py`.
