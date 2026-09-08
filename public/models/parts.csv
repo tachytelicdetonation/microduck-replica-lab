@@ -1,0 +1,71 @@
+instance,name,source_mesh,body,assembly,category
+part_000,22 × 16 × 4 bearing,seeed_bearing__configuration__22x16x4,trunk_base,Torso,Hardware
+part_001,Right body shell,right_shell,trunk_base,Torso,Shell
+part_002,Curved PCB retainer,banana_pcb_locker,trunk_base,Torso,Structure
+part_003,Torso base,trunk_base,trunk_base,Torso,Structure
+part_004,Dynamixel XL330,xl330,trunk_base,Torso,Actuator
+part_005,Power board support,power_support,trunk_base,Torso,Structure
+part_006,Battery envelope,np_f970,trunk_base,Torso,Electronics
+part_007,Dynamixel XL330,xl330,trunk_base,Torso,Actuator
+part_008,Left body shell,left_shell,trunk_base,Torso,Shell
+part_009,22 × 16 × 4 bearing,seeed_bearing__configuration__22x16x4,trunk_base,Torso,Hardware
+part_010,Hip yaw–roll bracket,yaw2roll,yaw2roll,Left leg,Structure
+part_011,Dynamixel XL330,xl330,yaw2roll,Left leg,Actuator
+part_012,22 × 16 × 4 bearing,seeed_bearing__configuration__22x16x4,yaw2roll,Left leg,Hardware
+part_013,Roll bearing retainer,bearing_roll,yaw2roll,Left leg,Structure
+part_014,22 × 16 × 4 bearing,seeed_bearing__configuration__22x16x4,hip_l,Left leg,Hardware
+part_015,Hip roll link,hip_l,hip_l,Left leg,Structure
+part_016,Left upper leg,upper_leg_left,upper_leg_left,Left leg,Structure
+part_017,Dynamixel XL330,xl330,upper_leg_left,Left leg,Actuator
+part_018,Thigh reinforcement,upper_leg_rigidity_plate,upper_leg_left,Left leg,Structure
+part_019,22 × 16 × 4 bearing,seeed_bearing__configuration__22x16x4,upper_leg_left,Left leg,Hardware
+part_020,Dynamixel XL330,xl330,upper_leg_left,Left leg,Actuator
+part_021,Lower leg link,leg,leg,Left leg,Structure
+part_022,Dynamixel XL330,xl330,leg,Left leg,Actuator
+part_023,Left sole,sole_left,ankle_left,Left leg,Soft part
+part_024,Left foot,foot_left,ankle_left,Left leg,Structure
+part_025,Joint bearing,seeed_bearing__configuration_default,ankle_left,Left leg,Hardware
+part_026,Left ankle,ankle_left,ankle_left,Left leg,Structure
+part_027,Neck root,neck,neck,Head & neck,Structure
+part_028,Dynamixel XL330,xl330,neck,Head & neck,Actuator
+part_029,Dynamixel XL330,xl330,neck,Head & neck,Actuator
+part_030,Neck root,neck,neck,Head & neck,Structure
+part_031,Neck pitch link,neck_pitch,neck_pitch,Head & neck,Structure
+part_032,22 × 16 × 4 bearing,seeed_bearing__configuration__22x16x4,neck_pitch,Head & neck,Hardware
+part_033,Head yaw–roll frame,yaw_roll_motion,yaw_roll_motion,Head & neck,Structure
+part_034,Dynamixel XL330,xl330,yaw_roll_motion,Head & neck,Actuator
+part_035,22 × 16 × 4 bearing,seeed_bearing__configuration__22x16x4,yaw_roll_motion,Head & neck,Hardware
+part_036,22 × 16 × 4 bearing,seeed_bearing__configuration__22x16x4,yaw_roll_motion,Head & neck,Hardware
+part_037,Camera lens,lens,jaw_soft,Head & neck,Electronics
+part_038,Face panel,face_part,jaw_soft,Head & neck,Shell
+part_039,Dynamixel XL330,xl330,jaw_soft,Head & neck,Actuator
+part_040,Soft lower beak,jaw_soft,jaw_soft,Head & neck,Soft part
+part_041,Servo support,motor_support,jaw_soft,Head & neck,Structure
+part_042,Upper head shell,top_head_shell,jaw_soft,Head & neck,Shell
+part_043,Dynamixel XL330,xl330,jaw_soft,Head & neck,Actuator
+part_044,Joint bearing,seeed_bearing__configuration_default,jaw_soft,Head & neck,Hardware
+part_045,Robot interface HAT,elec_rpi_robot_hat_pcb,jaw_soft,Head & neck,Electronics
+part_046,Soft upper beak,soft_mouth_top,jaw_soft,Head & neck,Soft part
+part_047,Eye insert,noenoeil,jaw_soft,Head & neck,Structure
+part_048,Jaw structure,jaw,jaw_soft,Head & neck,Structure
+part_049,Lower head shell,bottom_head_shell,jaw_soft,Head & neck,Shell
+part_050,M12 lens holder,m12_lens_holder,jaw_soft,Head & neck,Structure
+part_051,Main computer envelope,pcb__raspberry_pi_zero_2_w,jaw_soft,Head & neck,Electronics
+part_052,Speaker,speaker,jaw_soft,Head & neck,Electronics
+part_053,Hip yaw–roll bracket,yaw2roll,bearing_roll,Right leg,Structure
+part_054,Dynamixel XL330,xl330,bearing_roll,Right leg,Actuator
+part_055,Roll bearing retainer,bearing_roll,bearing_roll,Right leg,Structure
+part_056,22 × 16 × 4 bearing,seeed_bearing__configuration__22x16x4,bearing_roll,Right leg,Hardware
+part_057,Hip roll link,hip_l,hip_l_2,Right leg,Structure
+part_058,22 × 16 × 4 bearing,seeed_bearing__configuration__22x16x4,hip_l_2,Right leg,Hardware
+part_059,Dynamixel XL330,xl330,upper_leg_right,Right leg,Actuator
+part_060,22 × 16 × 4 bearing,seeed_bearing__configuration__22x16x4,upper_leg_right,Right leg,Hardware
+part_061,Thigh reinforcement,upper_leg_rigidity_plate,upper_leg_right,Right leg,Structure
+part_062,Right upper leg,upper_leg_right,upper_leg_right,Right leg,Structure
+part_063,Dynamixel XL330,xl330,upper_leg_right,Right leg,Actuator
+part_064,Dynamixel XL330,xl330,leg_2,Right leg,Actuator
+part_065,Lower leg link,leg,leg_2,Right leg,Structure
+part_066,Right ankle,ankle_right,ankle_right,Right leg,Structure
+part_067,Right sole,sole_right,ankle_right,Right leg,Soft part
+part_068,Joint bearing,seeed_bearing__configuration_default,ankle_right,Right leg,Hardware
+part_069,Right foot,foot_right,ankle_right,Right leg,Structure

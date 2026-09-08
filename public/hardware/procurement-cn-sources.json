@@ -1,0 +1,243 @@
+{
+  "research_date": "2026-09-08",
+  "destination_country": "United States",
+  "fx": {
+    "date": "2026-09-07",
+    "cny_per_usd": 6.711,
+    "reference_only": true
+  },
+  "fresh_public_page_checks": [
+    {
+      "id": "robotis_international_servo",
+      "url": "https://en.robotis.com/shop_en/item.php?it_id=902-0163-000",
+      "checked_utc": "2026-09-08T00:45:00.856969+00:00",
+      "status": 200,
+      "final_url": "https://en.robotis.com/shop_en/item.php?it_id=902-0163-000",
+      "observation": "Genuine XL330-M288-T product; $23.90; Korea origin; DHL from Korea; destination import charges excluded."
+    },
+    {
+      "id": "robotis_xl_series",
+      "url": "https://en.robotis.com/shop_en/list.php?ca_id=202030",
+      "checked_utc": "2026-09-08T00:43:44.867464+00:00",
+      "status": 200,
+      "final_url": "https://en.robotis.com/shop_en/list.php?ca_id=202030",
+      "observation": "XL330-M288-T listed at $23.90 with 40-day lead time."
+    },
+    {
+      "id": "robotis_global",
+      "url": "https://en.robotis.com/shop_en/",
+      "checked_utc": "2026-09-08T00:30:29.310820+00:00",
+      "status": 200,
+      "final_url": "https://en.robotis.com/shop_en/",
+      "observation": "Region selector links China to shop292418244.taobao.com; international shop is Korea, not a China product price."
+    },
+    {
+      "id": "allnet_zero",
+      "url": "https://shop.allnetchina.cn/products/copy-of-radxa-zero-3w",
+      "checked_utc": "2026-09-08T00:30:29.373405+00:00",
+      "status": 200,
+      "final_url": "https://shop.allnetchina.cn/products/copy-of-radxa-zero-3w",
+      "observation": "2GB/16GB no-header $32.90 and header $33.90, both marked sold out."
+    },
+    {
+      "id": "arace_camera",
+      "url": "https://arace.tech/products/radxa-camera-8m-219",
+      "checked_utc": "2026-09-08T00:30:29.569259+00:00",
+      "status": 200,
+      "final_url": "https://arace.tech/products/radxa-camera-8m-219",
+      "observation": "Radxa Camera 8M 219 with default Zero3W/3E FPC; $15.99, page says in stock. Enclosure fit not validated."
+    },
+    {
+      "id": "jlc_domestic",
+      "url": "https://www.jlc.com/",
+      "checked_utc": "2026-09-08T00:30:29.309713+00:00",
+      "status": 200,
+      "final_url": "https://www.jlc.com/",
+      "observation": "Main domestic page advertises FR-4 from CNY20/5pcs and SMT from CNY50; no HAT quote."
+    },
+    {
+      "id": "jlc_domestic_3dp",
+      "url": "https://www.jlc-3dp.cn/",
+      "checked_utc": "2026-09-08T00:35:37.126910+00:00",
+      "status": 200,
+      "final_url": "https://www.jlc-3dp.cn/",
+      "observation": "Domestic PA12 MJF, nylon SLS and TPU FDM services visible; no robot-specific price or applicable MOQ."
+    },
+    {
+      "id": "jlc_domestic_smt",
+      "url": "https://www.jlcsmt.com/",
+      "checked_utc": "2026-09-08T00:35:37.127601+00:00",
+      "status": 200,
+      "final_url": "https://www.jlc-smt.com/",
+      "observation": "Domestic SMT endpoint resolves; no robot quote."
+    },
+    {
+      "id": "jlc3dp_home",
+      "url": "https://jlc3dp.com/",
+      "checked_utc": "2026-09-08T00:30:06.378629+00:00",
+      "status": 200,
+      "final_url": "https://jlc3dp.com/",
+      "observation": "Export printing services visible; advertised from-prices do not establish a 36-piece quote."
+    },
+    {
+      "id": "jlc_pa12",
+      "url": "https://jlc3dp.com/help/article/PA12-HP-Nylon",
+      "checked_utc": "2026-09-08T00:35:38.657464+00:00",
+      "status": 200,
+      "final_url": "https://jlc3dp.com/help/article/pa12-hp-nylon",
+      "observation": "PA12-HP MJF from USD1, 72h build, +/-0.3mm under100mm, 1mm wall."
+    },
+    {
+      "id": "jlc_tpu",
+      "url": "https://jlc3dp.com/help/article/TPU",
+      "checked_utc": "2026-09-08T00:35:39.808361+00:00",
+      "status": 200,
+      "final_url": "https://jlc3dp.com/help/article/tpu",
+      "observation": "TPU FDM from USD3, Shore95A, 72h, default15% infill, minimum build30x30x15mm and minimum wall1.2mm (1.6mm recommended)."
+    },
+    {
+      "id": "jlc3dp_shipping_valid",
+      "url": "https://jlc3dp.com/shipping",
+      "checked_utc": "2026-09-08T00:35:37.132686+00:00",
+      "status": 200,
+      "final_url": "https://jlc3dp.com/shipping",
+      "observation": "Shipping calculator endpoint. Requires destination and packed weight; no actual freight price obtained."
+    },
+    {
+      "id": "jlcpcb_pcba",
+      "url": "https://jlcpcb.com/pcb-assembly",
+      "checked_utc": "2026-09-08T00:30:06.379397+00:00",
+      "status": 200,
+      "final_url": "https://jlcpcb.com/pcb-assembly",
+      "observation": "PCBA advertised starting USD8 setup and USD0.0016/joint; not a populated HAT price."
+    },
+    {
+      "id": "pcbway_pcba",
+      "url": "https://www.pcbway.com/pcb-assembly.html",
+      "checked_utc": "2026-09-08T00:30:06.383662+00:00",
+      "status": 200,
+      "final_url": "https://www.pcbway.com/pcb-assembly.html",
+      "observation": "PCBA capability page available; HAT quote and applicable MOQ unverified."
+    },
+    {
+      "id": "pcbway_3dp",
+      "url": "https://www.pcbway.com/rapid-prototyping/3d-printing/",
+      "checked_utc": "2026-09-08T00:34:49.536530+00:00",
+      "status": 200,
+      "final_url": "https://www.pcbway.com/rapid-prototyping/3d-printing/",
+      "observation": "PA12 SLS/MJF, PETG FDM and TPU services listed; no robot quote."
+    },
+    {
+      "id": "cbp_ecommerce_faq",
+      "url": "https://www.cbp.gov/trade/basic-import-export/e-commerce/faqs",
+      "checked_utc": "2026-09-08T00:34:49.534776+00:00",
+      "status": 200,
+      "final_url": "https://www.cbp.gov/trade/basic-import-export/e-commerce/faqs",
+      "observation": "Last modified Sep2 2026; de minimis suspended for all countries/modes except applicable exceptions. No blanket tariff assumed."
+    },
+    {
+      "id": "lcsc",
+      "url": "https://www.lcsc.com/",
+      "checked_utc": "2026-09-08T00:43:44.878060+00:00",
+      "status": 200,
+      "final_url": "https://www.lcsc.com/",
+      "observation": "Component distributor portal available; no released IMU BOM or component basket priced."
+    },
+    {
+      "id": "fx_historical",
+      "url": "https://api.frankfurter.dev/v1/2026-09-07?base=USD&symbols=CNY",
+      "checked_utc": "2026-09-08T00:43:44.869729+00:00",
+      "status": 200,
+      "final_url": "https://api.frankfurter.dev/v1/2026-09-07?base=USD&symbols=CNY",
+      "observation": "Date2026-09-07 USD1=CNY6.711."
+    },
+    {
+      "id": "ecb_fx",
+      "url": "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml",
+      "checked_utc": "2026-09-08T00:30:29.311636+00:00",
+      "status": 200,
+      "final_url": "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml",
+      "observation": "Date2026-09-07 EUR1=USD1.1622 and CNY7.7995; compatible with rounded CNY6.711/USD."
+    }
+  ],
+  "price_checks_unavailable": [
+    {
+      "id": "taobao_bearing_large",
+      "url": "https://item.taobao.com/item.htm?id=539024647147",
+      "checked_utc": "2026-09-08T00:30:06.899581+00:00",
+      "status": 200,
+      "final_url": "https://item.taobao.com/item.htm?id=539024647147",
+      "price_status": "No usable selected-SKU price or stock text returned; HTTP200 is not price verification."
+    },
+    {
+      "id": "taobao_bearing_small",
+      "url": "https://item.taobao.com/item.htm?id=670727787832",
+      "checked_utc": "2026-09-08T00:30:07.585367+00:00",
+      "status": 200,
+      "final_url": "https://item.taobao.com/item.htm?id=670727787832",
+      "price_status": "No usable selected-SKU price or stock text returned; HTTP200 is not price verification."
+    },
+    {
+      "id": "taobao_fastener",
+      "url": "https://item.taobao.com/item.htm?id=842110292995",
+      "checked_utc": "2026-09-08T00:30:07.929709+00:00",
+      "status": 200,
+      "final_url": "https://item.taobao.com/item.htm?id=842110292995",
+      "price_status": "No usable selected-SKU price or stock text returned; HTTP200 is not price verification."
+    },
+    {
+      "id": "taobao_imx219",
+      "url": "https://detail.tmall.com/item.htm?id=775872575316",
+      "checked_utc": "2026-09-08T00:30:08.117717+00:00",
+      "status": 200,
+      "final_url": "https://detail.tmall.com/item.htm?id=775872575316",
+      "price_status": "No usable selected-SKU price or stock text returned; HTTP200 is not price verification."
+    },
+    {
+      "id": "taobao_tof",
+      "url": "https://item.taobao.com/item.htm?id=1025775539663",
+      "checked_utc": "2026-09-08T00:30:08.327461+00:00",
+      "status": 200,
+      "final_url": "https://item.taobao.com/item.htm?id=1025775539663",
+      "price_status": "No usable selected-SKU price or stock text returned; HTTP200 is not price verification."
+    },
+    {
+      "id": "aliexpress_xl330",
+      "url": "https://www.aliexpress.com/item/1005004403336577.html",
+      "checked_utc": "2026-09-08T00:30:06.384506+00:00",
+      "status": 200,
+      "final_url": "https://de.aliexpress.com/item/1005004403336577.html?gatewayAdapt=glo2deu",
+      "price_status": "No usable selected-SKU price or stock text returned; HTTP200 is not price verification."
+    },
+    {
+      "id": "robotis_china_shop",
+      "url": "https://shop292418244.taobao.com/index.htm",
+      "checked_utc": "2026-09-08T00:43:44.868800+00:00",
+      "status": 200,
+      "final_url": "https://shop292418244.world.taobao.com/index.htm",
+      "price_status": "No usable selected-SKU price or stock text returned; HTTP200 is not price verification."
+    }
+  ],
+  "community_snapshot": {
+    "price_date": "2026-09-04",
+    "revision": "73e2118dc0b5bf463ab7d422e5274c29adfd9ea7",
+    "base_url": "https://github.com/fanhao375/microduck-replica/blob/73e2118dc0b5bf463ab7d422e5274c29adfd9ea7/docs/",
+    "files": [
+      "机械采购清单.md",
+      "电控采购清单.md",
+      "执行器选型.md"
+    ],
+    "status": "Community-reported unverified prices, not independently confirmed current SKU/stock. Other Taobao links in the guide are leads from these notes, not fresh checked listings."
+  },
+  "us_baseline": {
+    "date": "2026-09-08",
+    "document": "PROCUREMENT_US.md",
+    "status": "Retained research baseline; current checkout shipping/tax and conflicting VXB price need confirmation."
+  },
+  "transactions": {
+    "uploads": 0,
+    "quote_submissions": 0,
+    "purchases": 0,
+    "supplier_messages": 0
+  }
+}

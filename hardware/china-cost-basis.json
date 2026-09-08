@@ -1,0 +1,17 @@
+{
+  "researchDate": "2026-09-08",
+  "fxDate": "2026-09-07",
+  "cnyPerUsd": 6.711,
+  "fxSource": "https://api.frankfurter.dev/v1/2026-09-07?base=USD&symbols=CNY",
+  "usBearingBasketUsd": 339.84,
+  "usBasketNote": "11 EZO ET2216 at $26.35 plus a VXB 10-pack at displayed $49.99; seven spare small bearings. Confirm conflicting VXB price field. Not cheapest US route or equivalent-quality proof.",
+  "chinaBearingGoodsCny": 39.2,
+  "chinaBearingAlternativeCny": 70,
+  "chinaPriceStatus": "Unverified community snapshot dated 2026-09-04; assumes per-bearing prices and no extra MOQ.",
+  "chinaBasket": [
+    {"quantity": 11, "unitCny": 2.2, "specificationMm": [16, 22, 4], "url": "https://item.taobao.com/item.htm?id=539024647147"},
+    {"quantity": 3, "unitCny": 5, "specificationMm": [10, 15, 3], "url": "https://item.taobao.com/item.htm?id=670727787832"}
+  ],
+  "targetSavingPercent": 20,
+  "targetNote": "Editable planning choice, not a supplier promise or user-set constraint."
+}

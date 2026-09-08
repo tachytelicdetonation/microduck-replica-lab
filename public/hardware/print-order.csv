@@ -1,0 +1,31 @@
+mesh,name,quantity,file_in_zip,proposed_material,source_dimensions_mm,notes
+ankle_left,Left ankle,1,rigid/ankle_left.stl,PA12 MJF/SLS: proposed; PETG fit prototype alternative,39.49 x 36.5 x 25.5,"Reference geometry; validate fit, process, mass and finish."
+ankle_right,Right ankle,1,rigid/ankle_right.stl,PA12 MJF/SLS: proposed; PETG fit prototype alternative,39.49 x 36.5 x 25.5,"Reference geometry; validate fit, process, mass and finish."
+banana_pcb_locker,Curved PCB retainer,1,rigid/banana_pcb_locker.stl,PA12 MJF/SLS: proposed; PETG fit prototype alternative,54.05 x 3.8 x 6.65,"Reference geometry; validate fit, process, mass and finish."
+bearing_roll,Roll bearing retainer,2,rigid/bearing_roll.stl,PA12 MJF/SLS: proposed; PETG fit prototype alternative,23.0 x 3.0 x 40.0,"Reference geometry; validate fit, process, mass and finish."
+bottom_head_shell,Lower head shell,1,rigid/bottom_head_shell.stl,PA12 MJF/SLS: proposed; PETG fit prototype alternative,91.76 x 116.75 x 20.14,"Reference geometry; validate fit, process, mass and finish."
+face_part,Face panel,1,rigid/face_part.stl,PA12 MJF/SLS: proposed; PETG fit prototype alternative,87.65 x 12.5 x 44.63,"Reference geometry; validate fit, process, mass and finish."
+foot_left,Left foot,1,rigid/foot_left.stl,PA12 MJF/SLS: proposed; PETG fit prototype alternative,40.09 x 54.0 x 16.91,"Reference geometry; validate fit, process, mass and finish."
+foot_right,Right foot,1,rigid/foot_right.stl,PA12 MJF/SLS: proposed; PETG fit prototype alternative,40.09 x 54.0 x 16.91,"Reference geometry; validate fit, process, mass and finish."
+hip_l,Hip roll link,2,rigid/hip_l.stl,PA12 MJF/SLS: proposed; PETG fit prototype alternative,32.45 x 34.5 x 19.0,"Reference geometry; validate fit, process, mass and finish."
+jaw,Jaw structure,1,rigid/jaw.stl,PA12 MJF/SLS: proposed; PETG fit prototype alternative,91.42 x 68.71 x 29.45,"Reference geometry; validate fit, process, mass and finish."
+jaw_soft,Soft lower beak,1,flexible/jaw_soft.stl,TPU around 95A: proposed,87.67 x 32.23 x 8.44,No validated hardness/friction specification; test material and contact behavior.
+left_shell,Left body shell,1,rigid/left_shell.stl,PA12 MJF/SLS: proposed; PETG fit prototype alternative,33.71 x 80.89 x 41.69,"Reference geometry; validate fit, process, mass and finish."
+leg,Lower leg link,2,rigid/leg.stl,PA12 MJF/SLS: proposed; PETG fit prototype alternative,7.95 x 20.0 x 58.0,"Reference geometry; validate fit, process, mass and finish."
+m12_lens_holder,M12 lens holder,1,review-before-order/m12_lens_holder.stl,PA12 MJF/SLS: proposed; PETG fit prototype alternative,24.0 x 14.8 x 16.0,"HOLD: confirm selected camera, lens thread and whether this part is bought or made."
+motor_support,Servo support,1,rigid/motor_support.stl,PA12 MJF/SLS: proposed; PETG fit prototype alternative,73.5 x 54.2 x 18.8,"Reference geometry; validate fit, process, mass and finish."
+neck,Neck root,2,rigid/neck.stl,PA12 MJF/SLS: proposed; PETG fit prototype alternative,2.0 x 20.0 x 11.0,"Reference geometry; validate fit, process, mass and finish."
+neck_pitch,Neck pitch link,1,rigid/neck_pitch.stl,PA12 MJF/SLS: proposed; PETG fit prototype alternative,35.0 x 18.0 x 27.69,"Reference geometry; validate fit, process, mass and finish."
+noenoeil,Eye insert,1,rigid/noenoeil.stl,PA12 MJF/SLS: proposed; PETG fit prototype alternative,30.0 x 9.5 x 30.0,"Reference geometry; validate fit, process, mass and finish."
+power_support,Power board support,1,rigid/power_support.stl,PA12 MJF/SLS: proposed; PETG fit prototype alternative,54.5 x 17.0 x 83.49,Confirm actual battery/contacts: mounting adaptation may change this part.
+right_shell,Right body shell,1,rigid/right_shell.stl,PA12 MJF/SLS: proposed; PETG fit prototype alternative,31.76 x 80.9 x 41.69,"Reference geometry; validate fit, process, mass and finish."
+soft_mouth_top,Soft upper beak,1,flexible/soft_mouth_top.stl,TPU around 95A: proposed,87.82 x 32.57 x 3.28,No validated hardness/friction specification; test material and contact behavior.
+sole_left,Left sole,1,flexible/sole_left.stl,TPU around 95A: proposed,41.1 x 54.0 x 12.91,No validated hardness/friction specification; test material and contact behavior.
+sole_right,Right sole,1,flexible/sole_right.stl,TPU around 95A: proposed,41.1 x 54.0 x 12.91,No validated hardness/friction specification; test material and contact behavior.
+top_head_shell,Upper head shell,1,rigid/top_head_shell.stl,PA12 MJF/SLS: proposed; PETG fit prototype alternative,91.76 x 122.69 x 46.34,"Reference geometry; validate fit, process, mass and finish."
+trunk_base,Torso base,1,rigid/trunk_base.stl,PA12 MJF/SLS: proposed; PETG fit prototype alternative,57.0 x 36.0 x 3.0,"Reference geometry; validate fit, process, mass and finish."
+upper_leg_left,Left upper leg,1,rigid/upper_leg_left.stl,PA12 MJF/SLS: proposed; PETG fit prototype alternative,28.0 x 47.66 x 61.0,"Reference geometry; validate fit, process, mass and finish."
+upper_leg_right,Right upper leg,1,rigid/upper_leg_right.stl,PA12 MJF/SLS: proposed; PETG fit prototype alternative,28.0 x 47.66 x 61.0,"Reference geometry; validate fit, process, mass and finish."
+upper_leg_rigidity_plate,Thigh reinforcement,2,rigid/upper_leg_rigidity_plate.stl,PA12 MJF/SLS: proposed; PETG fit prototype alternative,1.0 x 45.0 x 58.06,1 mm thin reinforcement: service must review material/strength/process.
+yaw2roll,Hip yaw–roll bracket,2,rigid/yaw2roll.stl,PA12 MJF/SLS: proposed; PETG fit prototype alternative,23.0 x 25.8 x 20.5,"Reference geometry; validate fit, process, mass and finish."
+yaw_roll_motion,Head yaw–roll frame,1,rigid/yaw_roll_motion.stl,PA12 MJF/SLS: proposed; PETG fit prototype alternative,34.0 x 35.9 x 22.5,"Reference geometry; validate fit, process, mass and finish."

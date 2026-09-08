@@ -1,0 +1,11 @@
+stage,pass_condition,evidence_file,passed,date,notes
+1 single servo,read position velocity voltage temperature and ±5° movement,,,,
+2 one leg,all five IDs order direction and limits on fixture,,,,
+3 full bus,15 unique IDs and stable reads with torque off,,,,
+4 IMU,ID 200 produces live gravity and gyro samples,,,,
+5 home pose,slow interpolation has no reversal collision or heat,,,,
+6 feet off,14 action order and amplitudes symmetric,,,,
+7 supported stand,stable contact with external support,,,,
+8 tethered stand,5–10 s stand on soft surface,,,,
+9 supported walk,small command with saved telemetry and video,,,,
+10 free walk,short distance with emergency disconnect ready,,,,

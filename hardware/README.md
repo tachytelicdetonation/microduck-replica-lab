@@ -1,0 +1,11 @@
+# Hardware worksheets
+
+US shopping and outsourcing are described in [PROCUREMENT_US.md](../docs/PROCUREMENT_US.md). `procurement-us.csv` is a purchasing checklist with blank order/cost/receipt fields. `print-order.csv` lists 30 design types / 36 modeled pieces and proposed trial materials; quantity comes from visual occurrences, excluding collision duplicates. `assembly-fit.csv` and `harness.csv` hold the physical measurements missing from the public source. Print quotes and an assembled HAT still require engineering and bench checks.
+
+The [China addendum](../docs/PROCUREMENT_CN.md) and `procurement-cn.csv` add supplier alternatives and US delivered-cost comparison. The 25 CSV rows distinguish required quantities from alternatives and fabrication services; actual order/cost fields are blank. `china-cost-basis.json` holds the dated bearing/FX assumptions used by the web calculator, and `procurement-cn-sources.json` records public checks and unverified community leads. Regenerate only the China checklist with `python3 scripts/export_china_procurement.py`; this leaves the US list and all quote ZIPs untouched.
+
+Regenerate the shopping CSV and print/HAT quote ZIPs with `python3 scripts/export_procurement.py` from the repository root, after fetching upstream sources and generating the geometry. This does not send files to a supplier or place any orders.
+
+`calibration.csv` is the policy-to-servo contract. `bringup-checklist.csv` is an evidence log. `mass-properties.csv` compares the pinned MJCF body masses and centres of mass with your measurements. Fill copies of these files with measured values; keep the originals as templates. Never mark a row from a simulation result: physical rows require physical evidence.
+
+Mass rows correspond to complete MuJoCo rigid bodies, including attached hardware, rather than individual printed meshes. Centre-of-mass coordinates are in each body's local MJCF frame, in millimetres. For example, `jaw_soft` names a complete head body in the source and carries 188.766 g; it is not the mass of a soft beak. Reference values come from `robot_allcollisions.xml` at the revision in `upstream.lock.json`. Measurements are intentionally blank. Retain the source inertial tensors until you have measured or recomputed replacements; mass and centre of mass alone do not specify inertia.

@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.venv/
+upstream/
+research/
+__pycache__/
+.pytest_cache/
+*.pyc
+artifacts/
+.DS_Store

@@ -1,0 +1,8 @@
+assembly,parts_to_check,actual_servo_or_board_revision,bearing_size_mm,screw_type_and_length,washer_or_spacer,engagement_mm,measured_clearance_mm,free_travel_pass,cable_clearance_pass,mass_g,evidence_file,notes
+one hip yaw joint,yaw2roll / bearing_roll / purchased XL330 and bearing,,,,,,,,,,,
+left leg,hip_l / upper_leg_left / leg / ankle_left / foot_left / sole_left,,,,,,,,,,,
+right leg,hip_l / upper_leg_right / leg / ankle_right / foot_right / sole_right,,,,,,,,,,,
+neck,neck / neck_pitch / yaw_roll_motion / motor_support,,,,,,,,,,,
+head electronics,Radxa / HAT / camera / lens holder / head shell / speaker,,,,,,,,,,,
+battery mount,power_support / battery contacts or plate / battery / shell,,,,,,,,,,,
+mouth,jaw / jaw_soft / soft_mouth_top / independent mouth servo,,,,,,,,,,,

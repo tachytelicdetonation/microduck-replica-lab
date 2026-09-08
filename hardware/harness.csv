@@ -1,0 +1,11 @@
+route,connector_from,connector_to,pinout_checked,power_domain,wire_gauge,measured_length_mm,strain_relief,full_travel_checked,voltage_drop_measured,fuse_or_current_rating,evidence_file,notes
+battery to protected distribution,,,,,,,,,,,,define input fuse and physical disconnect with builder
+regulated servo supply to TTL bus,,,,,,,,,,,,verify no raw battery path remains to servos
+host supply to Radxa/HAT,,,,,,,,,,,,confirm input range and prevent USB backfeed
+left leg servo chain IDs 20-24,,,,,,,,,,,,use actual routing and sufficient service loops
+right leg servo chain IDs 10-14,,,,,,,,,,,,use actual routing and sufficient service loops
+neck/head/mouth chain IDs 30-34,,,,,,,,,,,,power and servo bus cross moving neck
+IMU ID 200,,,,,,,,,,,,validate firmware mounting axes and bus register contract
+camera to Radxa CSI,,,,,,,,,,,,both in head; match pin count pitch contact side
+optional ToF to HAT Qwiic,,,,,,,,,,,,verify connector and 3.3 V signal domain
+optional speaker to HAT audio,,,,,,,,,,,,verify load and do not ground either bridge-amplifier output

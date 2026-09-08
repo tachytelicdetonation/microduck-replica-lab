@@ -1,0 +1,16 @@
+action_index,physical_slot,servo_id,joint,policy_role,home_rad,notes
+0,0,20,left_hip_yaw,policy,0.0000,verify positive yaw in the left-leg frame
+1,1,21,left_hip_roll,policy,-0.0873,verify mirrored roll sign
+2,2,22,left_hip_pitch,policy,-0.4579,check horn seating and hard stops
+3,3,23,left_knee,policy,-0.0049,unloaded small-angle test first
+4,4,24,left_ankle,policy,0.4530,check sole clearance through full range
+5,5,30,neck_pitch,policy,0.3491,head chain
+6,6,31,head_pitch,policy,0.3491,head chain
+7,7,32,head_yaw,policy,0.0000,check camera cable sweep
+8,8,33,head_roll,policy,0.0000,check symmetric sign
+MOUTH,9,34,mouth,independent,0.0000,not in the 14-action policy output
+9,10,10,right_hip_yaw,policy,0.0000,policy action 9; not array slot 9
+10,11,11,right_hip_roll,policy,0.0873,policy action 10
+11,12,12,right_hip_pitch,policy,0.4579,policy action 11
+12,13,13,right_knee,policy,0.0049,policy action 12
+13,14,14,right_ankle,policy,-0.4530,policy action 13

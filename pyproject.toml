@@ -1,0 +1,23 @@
+[project]
+name = "microduck-replica-lab"
+version = "0.1.0"
+description = "Reproducible Microduck assembly, CPU simulation, and build workbench"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "mujoco==3.10.0",
+  "numpy>=2.2,<3",
+  "onnxruntime==1.24.4",
+  "better-actuator-models",
+  "trimesh==4.11.1",
+  "pillow>=11,<13",
+]
+
+[dependency-groups]
+dev = ["pytest>=8,<10"]
+
+[tool.uv.sources]
+better-actuator-models = { git = "https://github.com/Rhoban/bam.git", rev = "62bd8ce12154340be97e06f7f41a0ca8f116d967" }
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

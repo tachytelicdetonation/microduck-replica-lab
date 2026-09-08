@@ -1,0 +1,2447 @@
+{
+  "title": "Microduck \u00b7 original geometry",
+  "units": "millimetres",
+  "upAxis": "Z",
+  "source": "pollen-robotics/microduck_rl",
+  "revision": "2b25a48b08f1f17bc38c90bb03144c81fbd9ed07",
+  "license": "CC BY-NC-SA 4.0",
+  "pose": "HOME at trunk z = 125 mm",
+  "partCount": 70,
+  "uniqueMeshCount": 38,
+  "modelMassGrams": 737.24,
+  "boundsMm": [
+    122.69,
+    142.06,
+    271.62
+  ],
+  "parts": [
+    {
+      "id": "part_000",
+      "name": "22 \u00d7 16 \u00d7 4 bearing",
+      "mesh": "seeed_bearing__configuration__22x16x4",
+      "body": "trunk_base",
+      "group": "Torso",
+      "kind": "Hardware",
+      "description": "Thin-section bearing represented in the source CAD. Confirm the seat and actual bearing fit before ordering.",
+      "triangles": 20970,
+      "dimensionsMm": [
+        22.0,
+        22.0,
+        4.0
+      ],
+      "center": [
+        6.001060532336399,
+        17.500853918882495,
+        121.99949792036391
+      ],
+      "color": [
+        0.8117650151252747,
+        0.8588240146636963,
+        0.8980389833450317,
+        1.0
+      ],
+      "download": "/models/parts-mm/seeed_bearing__configuration__22x16x4.stl"
+    },
+    {
+      "id": "part_001",
+      "name": "Right body shell",
+      "mesh": "right_shell",
+      "body": "trunk_base",
+      "group": "Torso",
+      "kind": "Shell",
+      "description": "Right exterior cover. Check the sweep of the legs, fastener access, and battery fit.",
+      "triangles": 20970,
+      "dimensionsMm": [
+        31.76,
+        80.9,
+        41.69
+      ],
+      "center": [
+        -10.4572873388205,
+        -22.773751021503717,
+        149.69322234147148
+      ],
+      "color": [
+        0.8509799838066101,
+        0.8509799838066101,
+        0.8392159938812256,
+        1.0
+      ],
+      "download": "/models/parts-mm/right_shell.stl"
+    },
+    {
+      "id": "part_002",
+      "name": "Curved PCB retainer",
+      "mesh": "banana_pcb_locker",
+      "body": "trunk_base",
+      "group": "Torso",
+      "kind": "Structure",
+      "description": "Curved retainer securing the head electronics.",
+      "triangles": 1388,
+      "dimensionsMm": [
+        54.05,
+        3.8,
+        6.65
+      ],
+      "center": [
+        -31.434266493268197,
+        0.3753391808835103,
+        159.53805316120196
+      ],
+      "color": [
+        0.6470590233802795,
+        0.6470590233802795,
+        0.6470590233802795,
+        1.0
+      ],
+      "download": "/models/parts-mm/banana_pcb_locker.stl"
+    },
+    {
+      "id": "part_003",
+      "name": "Torso base",
+      "mesh": "trunk_base",
+      "body": "trunk_base",
+      "group": "Torso",
+      "kind": "Structure",
+      "description": "Root structural frame that carries the electronics, battery and three articulated chains.",
+      "triangles": 3698,
+      "dimensionsMm": [
+        57.0,
+        36.0,
+        3.0
+      ],
+      "center": [
+        -3.0466854547452202,
+        -2.4336410269590296e-06,
+        124.52434448779489
+      ],
+      "color": [
+        0.1294119954109192,
+        0.1529410034418106,
+        0.1294119954109192,
+        1.0
+      ],
+      "download": "/models/parts-mm/trunk_base.stl"
+    },
+    {
+      "id": "part_004",
+      "name": "Dynamixel XL330",
+      "mesh": "xl330",
+      "body": "trunk_base",
+      "group": "Torso",
+      "kind": "Actuator",
+      "description": "Smart servo on the 1 Mbps TTL bus. Fifteen physical servos: fourteen policy joints plus the independently controlled mouth.",
+      "triangles": 4126,
+      "dimensionsMm": [
+        29.0,
+        20.0,
+        34.0
+      ],
+      "center": [
+        -0.7386922657095221,
+        17.500000000029196,
+        136.55469230982627
+      ],
+      "color": [
+        0.2862749993801117,
+        0.2862749993801117,
+        0.2862749993801117,
+        1.0
+      ],
+      "download": "/models/parts-mm/xl330.stl"
+    },
+    {
+      "id": "part_005",
+      "name": "Power board support",
+      "mesh": "power_support",
+      "body": "trunk_base",
+      "group": "Torso",
+      "kind": "Structure",
+      "description": "Support for power and battery components in the torso.",
+      "triangles": 12832,
+      "dimensionsMm": [
+        54.5,
+        17.0,
+        83.49
+      ],
+      "center": [
+        -23.31436142071314,
+        0.0313594359871022,
+        125.48252222771902
+      ],
+      "color": [
+        0.6745100021362305,
+        0.6392160058021545,
+        0.6039220094680786,
+        1.0
+      ],
+      "download": "/models/parts-mm/power_support.stl"
+    },
+    {
+      "id": "part_006",
+      "name": "Battery envelope",
+      "mesh": "np_f970",
+      "body": "trunk_base",
+      "group": "Torso",
+      "kind": "Electronics",
+      "description": "Battery envelope from the CAD export. The series describes an NP-F550-class pack; this mesh is named NP-F970. Verify the purchased pack and power design.",
+      "triangles": 20970,
+      "dimensionsMm": [
+        38.61,
+        20.58,
+        70.81
+      ],
+      "center": [
+        -35.104233609439184,
+        0.007753082561806587,
+        121.41242410171905
+      ],
+      "color": [
+        0.3019610047340393,
+        0.3019610047340393,
+        0.3019610047340393,
+        1.0
+      ],
+      "download": "/models/parts-mm/np_f970.stl"
+    },
+    {
+      "id": "part_007",
+      "name": "Dynamixel XL330",
+      "mesh": "xl330",
+      "body": "trunk_base",
+      "group": "Torso",
+      "kind": "Actuator",
+      "description": "Smart servo on the 1 Mbps TTL bus. Fifteen physical servos: fourteen policy joints plus the independently controlled mouth.",
+      "triangles": 4126,
+      "dimensionsMm": [
+        29.0,
+        20.0,
+        34.0
+      ],
+      "center": [
+        -0.7386922657095218,
+        -17.499999999970846,
+        136.5546923098263
+      ],
+      "color": [
+        0.2862749993801117,
+        0.2862749993801117,
+        0.2862749993801117,
+        1.0
+      ],
+      "download": "/models/parts-mm/xl330.stl"
+    },
+    {
+      "id": "part_008",
+      "name": "Left body shell",
+      "mesh": "left_shell",
+      "body": "trunk_base",
+      "group": "Torso",
+      "kind": "Shell",
+      "description": "Left exterior cover. Check the sweep of the legs, fastener access, and battery fit.",
+      "triangles": 20970,
+      "dimensionsMm": [
+        33.71,
+        80.89,
+        41.69
+      ],
+      "center": [
+        -10.551913866228356,
+        21.878154023725795,
+        149.6635166604629
+      ],
+      "color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "download": "/models/parts-mm/left_shell.stl"
+    },
+    {
+      "id": "part_009",
+      "name": "22 \u00d7 16 \u00d7 4 bearing",
+      "mesh": "seeed_bearing__configuration__22x16x4",
+      "body": "trunk_base",
+      "group": "Torso",
+      "kind": "Hardware",
+      "description": "Thin-section bearing represented in the source CAD. Confirm the seat and actual bearing fit before ordering.",
+      "triangles": 20970,
+      "dimensionsMm": [
+        22.0,
+        22.0,
+        4.0
+      ],
+      "center": [
+        6.0010605323364,
+        -17.499146081117576,
+        121.99949792036395
+      ],
+      "color": [
+        0.8117650151252747,
+        0.8588240146636963,
+        0.8980389833450317,
+        1.0
+      ],
+      "download": "/models/parts-mm/seeed_bearing__configuration__22x16x4.stl"
+    },
+    {
+      "id": "part_010",
+      "name": "Hip yaw\u2013roll bracket",
+      "mesh": "yaw2roll",
+      "body": "yaw2roll",
+      "group": "Left leg",
+      "kind": "Structure",
+      "description": "Transfers the hip yaw axis to the hip roll joint.",
+      "triangles": 12404,
+      "dimensionsMm": [
+        23.0,
+        25.8,
+        20.5
+      ],
+      "center": [
+        1.991044764127489,
+        17.499988906852654,
+        116.17421218539717
+      ],
+      "color": [
+        0.1294119954109192,
+        0.1529410034418106,
+        0.1294119954109192,
+        1.0
+      ],
+      "download": "/models/parts-mm/yaw2roll.stl"
+    },
+    {
+      "id": "part_011",
+      "name": "Dynamixel XL330",
+      "mesh": "xl330",
+      "body": "yaw2roll",
+      "group": "Left leg",
+      "kind": "Actuator",
+      "description": "Smart servo on the 1 Mbps TTL bus. Fifteen physical servos: fourteen policy joints plus the independently controlled mouth.",
+      "triangles": 4126,
+      "dimensionsMm": [
+        29.0,
+        20.0,
+        34.0
+      ],
+      "center": [
+        5.945307690173806,
+        17.500000000029218,
+        100.76130773429057
+      ],
+      "color": [
+        0.2862749993801117,
+        0.2862749993801117,
+        0.2862749993801117,
+        1.0
+      ],
+      "download": "/models/parts-mm/xl330.stl"
+    },
+    {
+      "id": "part_012",
+      "name": "22 \u00d7 16 \u00d7 4 bearing",
+      "mesh": "seeed_bearing__configuration__22x16x4",
+      "body": "yaw2roll",
+      "group": "Left leg",
+      "kind": "Hardware",
+      "description": "Thin-section bearing represented in the source CAD. Confirm the seat and actual bearing fit before ordering.",
+      "triangles": 20970,
+      "dimensionsMm": [
+        22.0,
+        22.0,
+        4.0
+      ],
+      "center": [
+        20.500502079636068,
+        17.500853918882495,
+        107.50106053233594
+      ],
+      "color": [
+        0.8117650151252747,
+        0.8588240146636963,
+        0.8980389833450317,
+        1.0
+      ],
+      "download": "/models/parts-mm/seeed_bearing__configuration__22x16x4.stl"
+    },
+    {
+      "id": "part_013",
+      "name": "Roll bearing retainer",
+      "mesh": "bearing_roll",
+      "body": "yaw2roll",
+      "group": "Left leg",
+      "kind": "Structure",
+      "description": "Retains the bearing on the roll axis.",
+      "triangles": 2420,
+      "dimensionsMm": [
+        23.0,
+        3.0,
+        40.0
+      ],
+      "center": [
+        17.973369927874206,
+        17.499999077256103,
+        101.60705106080448
+      ],
+      "color": [
+        0.1294119954109192,
+        0.1529410034418106,
+        0.1294119954109192,
+        1.0
+      ],
+      "download": "/models/parts-mm/bearing_roll.stl"
+    },
+    {
+      "id": "part_014",
+      "name": "22 \u00d7 16 \u00d7 4 bearing",
+      "mesh": "seeed_bearing__configuration__22x16x4",
+      "body": "hip_l",
+      "group": "Left leg",
+      "kind": "Hardware",
+      "description": "Thin-section bearing represented in the source CAD. Confirm the seat and actual bearing fit before ordering.",
+      "triangles": 20970,
+      "dimensionsMm": [
+        22.0,
+        22.0,
+        4.0
+      ],
+      "center": [
+        4.000853918882565,
+        40.412003108904116,
+        105.49574970347462
+      ],
+      "color": [
+        0.8117650151252747,
+        0.8588240146636963,
+        0.8980389833450317,
+        1.0
+      ],
+      "download": "/models/parts-mm/seeed_bearing__configuration__22x16x4.stl"
+    },
+    {
+      "id": "part_015",
+      "name": "Hip roll link",
+      "mesh": "hip_l",
+      "body": "hip_l",
+      "group": "Left leg",
+      "kind": "Structure",
+      "description": "Hip roll link. Used on both sides with distinct assembly transforms.",
+      "triangles": 20970,
+      "dimensionsMm": [
+        32.45,
+        34.5,
+        19.0
+      ],
+      "center": [
+        16.003482073454958,
+        29.143208245659718,
+        106.48071850909817
+      ],
+      "color": [
+        0.6745100021362305,
+        0.6392160058021545,
+        0.6039220094680786,
+        1.0
+      ],
+      "download": "/models/parts-mm/hip_l.stl"
+    },
+    {
+      "id": "part_016",
+      "name": "Left upper leg",
+      "mesh": "upper_leg_left",
+      "body": "upper_leg_left",
+      "group": "Left leg",
+      "kind": "Structure",
+      "description": "Load-bearing left thigh link between hip and knee.",
+      "triangles": 12250,
+      "dimensionsMm": [
+        28.0,
+        47.66,
+        61.0
+      ],
+      "center": [
+        -18.557987082026123,
+        62.29920895516451,
+        89.9774813980478
+      ],
+      "color": [
+        0.8509799838066101,
+        0.8509799838066101,
+        0.8392159938812256,
+        1.0
+      ],
+      "download": "/models/parts-mm/upper_leg_left.stl"
+    },
+    {
+      "id": "part_017",
+      "name": "Dynamixel XL330",
+      "mesh": "xl330",
+      "body": "upper_leg_left",
+      "group": "Left leg",
+      "kind": "Actuator",
+      "description": "Smart servo on the 1 Mbps TTL bus. Fifteen physical servos: fourteen policy joints plus the independently controlled mouth.",
+      "triangles": 4126,
+      "dimensionsMm": [
+        29.0,
+        20.0,
+        34.0
+      ],
+      "center": [
+        -21.344947727636058,
+        52.339163982732636,
+        74.83305048942924
+      ],
+      "color": [
+        0.2862749993801117,
+        0.2862749993801117,
+        0.2862749993801117,
+        1.0
+      ],
+      "download": "/models/parts-mm/xl330.stl"
+    },
+    {
+      "id": "part_018",
+      "name": "Thigh reinforcement",
+      "mesh": "upper_leg_rigidity_plate",
+      "body": "upper_leg_left",
+      "group": "Left leg",
+      "kind": "Structure",
+      "description": "Stiffening plate for the upper leg assembly.",
+      "triangles": 3600,
+      "dimensionsMm": [
+        1.0,
+        45.0,
+        58.06
+      ],
+      "center": [
+        -17.439657475656855,
+        41.631073480567025,
+        90.74536245549531
+      ],
+      "color": [
+        0.6745100021362305,
+        0.6392160058021545,
+        0.6039220094680786,
+        1.0
+      ],
+      "download": "/models/parts-mm/upper_leg_rigidity_plate.stl"
+    },
+    {
+      "id": "part_019",
+      "name": "22 \u00d7 16 \u00d7 4 bearing",
+      "mesh": "seeed_bearing__configuration__22x16x4",
+      "body": "upper_leg_left",
+      "group": "Left leg",
+      "kind": "Hardware",
+      "description": "Thin-section bearing represented in the source CAD. Confirm the seat and actual bearing fit before ordering.",
+      "triangles": 20970,
+      "dimensionsMm": [
+        22.0,
+        22.0,
+        4.0
+      ],
+      "center": [
+        -18.365707854775692,
+        37.312500834070036,
+        70.08195690843502
+      ],
+      "color": [
+        0.8117650151252747,
+        0.8588240146636963,
+        0.8980389833450317,
+        1.0
+      ],
+      "download": "/models/parts-mm/seeed_bearing__configuration__22x16x4.stl"
+    },
+    {
+      "id": "part_020",
+      "name": "Dynamixel XL330",
+      "mesh": "xl330",
+      "body": "upper_leg_left",
+      "group": "Left leg",
+      "kind": "Actuator",
+      "description": "Smart servo on the 1 Mbps TTL bus. Fifteen physical servos: fourteen policy joints plus the independently controlled mouth.",
+      "triangles": 4126,
+      "dimensionsMm": [
+        29.0,
+        20.0,
+        34.0
+      ],
+      "center": [
+        -2.044491174804964,
+        54.65194406551006,
+        101.2580398488484
+      ],
+      "color": [
+        0.2862749993801117,
+        0.2862749993801117,
+        0.2862749993801117,
+        1.0
+      ],
+      "download": "/models/parts-mm/xl330.stl"
+    },
+    {
+      "id": "part_021",
+      "name": "Lower leg link",
+      "mesh": "leg",
+      "body": "leg",
+      "group": "Left leg",
+      "kind": "Structure",
+      "description": "Knee-to-ankle linkage. Check its full travel and wire clearance.",
+      "triangles": 14776,
+      "dimensionsMm": [
+        7.95,
+        20.0,
+        58.0
+      ],
+      "center": [
+        -10.81273882303668,
+        32.1655612798531,
+        54.95436982966812
+      ],
+      "color": [
+        0.6745100021362305,
+        0.6392160058021545,
+        0.6039220094680786,
+        1.0
+      ],
+      "download": "/models/parts-mm/leg.stl"
+    },
+    {
+      "id": "part_022",
+      "name": "Dynamixel XL330",
+      "mesh": "xl330",
+      "body": "leg",
+      "group": "Left leg",
+      "kind": "Actuator",
+      "description": "Smart servo on the 1 Mbps TTL bus. Fifteen physical servos: fourteen policy joints plus the independently controlled mouth.",
+      "triangles": 4126,
+      "dimensionsMm": [
+        29.0,
+        20.0,
+        34.0
+      ],
+      "center": [
+        -2.933368154680695,
+        43.95790935076646,
+        37.67301261960052
+      ],
+      "color": [
+        0.2862749993801117,
+        0.2862749993801117,
+        0.2862749993801117,
+        1.0
+      ],
+      "download": "/models/parts-mm/xl330.stl"
+    },
+    {
+      "id": "part_023",
+      "name": "Left sole",
+      "mesh": "sole_left",
+      "body": "ankle_left",
+      "group": "Left leg",
+      "kind": "Soft part",
+      "description": "Compliant ground-contact layer. Measure friction and compliance for sim-to-real tuning.",
+      "triangles": 15788,
+      "dimensionsMm": [
+        41.1,
+        54.0,
+        12.91
+      ],
+      "center": [
+        6.803395445742257,
+        40.89879695903456,
+        12.3505722666005
+      ],
+      "color": [
+        0.9568629860877991,
+        0.6862750053405762,
+        0.137254998087883,
+        1.0
+      ],
+      "download": "/models/parts-mm/sole_left.stl"
+    },
+    {
+      "id": "part_024",
+      "name": "Left foot",
+      "mesh": "foot_left",
+      "body": "ankle_left",
+      "group": "Left leg",
+      "kind": "Structure",
+      "description": "Rigid left foot. Its contact geometry and sole friction affect the trained gait.",
+      "triangles": 19922,
+      "dimensionsMm": [
+        40.09,
+        54.0,
+        16.91
+      ],
+      "center": [
+        7.923011626298512,
+        41.3609394551967,
+        16.404185673198022
+      ],
+      "color": [
+        1.0,
+        0.4039219915866852,
+        0.12156900018453598,
+        1.0
+      ],
+      "download": "/models/parts-mm/foot_left.stl"
+    },
+    {
+      "id": "part_025",
+      "name": "Joint bearing",
+      "mesh": "seeed_bearing__configuration_default",
+      "body": "ankle_left",
+      "group": "Left leg",
+      "kind": "Hardware",
+      "description": "Bearing geometry from the original assembly. Measure dimensions and fit; the filename does not establish a supplier specification.",
+      "triangles": 20970,
+      "dimensionsMm": [
+        15.0,
+        15.0,
+        3.0
+      ],
+      "center": [
+        0.015516456872849804,
+        27.344654555325143,
+        33.04211923981435
+      ],
+      "color": [
+        0.8117650151252747,
+        0.8588240146636963,
+        0.8980389833450317,
+        1.0
+      ],
+      "download": "/models/parts-mm/seeed_bearing__configuration_default.stl"
+    },
+    {
+      "id": "part_026",
+      "name": "Left ankle",
+      "mesh": "ankle_left",
+      "body": "ankle_left",
+      "group": "Left leg",
+      "kind": "Structure",
+      "description": "Left ankle link and foot attachment.",
+      "triangles": 4978,
+      "dimensionsMm": [
+        39.49,
+        36.5,
+        25.5
+      ],
+      "center": [
+        1.8833892550291484,
+        43.610749160274054,
+        24.086314762476988
+      ],
+      "color": [
+        1.0,
+        0.4039219915866852,
+        0.12156900018453598,
+        1.0
+      ],
+      "download": "/models/parts-mm/ankle_left.stl"
+    },
+    {
+      "id": "part_027",
+      "name": "Neck root",
+      "mesh": "neck",
+      "body": "neck",
+      "group": "Head & neck",
+      "kind": "Structure",
+      "description": "Base of the neck pitch chain.",
+      "triangles": 1468,
+      "dimensionsMm": [
+        2.0,
+        20.0,
+        11.0
+      ],
+      "center": [
+        17.448694652120604,
+        -12.499999952502531,
+        180.91352328075808
+      ],
+      "color": [
+        0.6745100021362305,
+        0.6392160058021545,
+        0.6039220094680786,
+        1.0
+      ],
+      "download": "/models/parts-mm/neck.stl"
+    },
+    {
+      "id": "part_028",
+      "name": "Dynamixel XL330",
+      "mesh": "xl330",
+      "body": "neck",
+      "group": "Head & neck",
+      "kind": "Actuator",
+      "description": "Smart servo on the 1 Mbps TTL bus. Fifteen physical servos: fourteen policy joints plus the independently controlled mouth.",
+      "triangles": 4126,
+      "dimensionsMm": [
+        29.0,
+        20.0,
+        34.0
+      ],
+      "center": [
+        23.695015301183744,
+        -0.05469230982619674,
+        163.75372069973585
+      ],
+      "color": [
+        0.2862749993801117,
+        0.2862749993801117,
+        0.2862749993801117,
+        1.0
+      ],
+      "download": "/models/parts-mm/xl330.stl"
+    },
+    {
+      "id": "part_029",
+      "name": "Dynamixel XL330",
+      "mesh": "xl330",
+      "body": "neck",
+      "group": "Head & neck",
+      "kind": "Actuator",
+      "description": "Smart servo on the 1 Mbps TTL bus. Fifteen physical servos: fourteen policy joints plus the independently controlled mouth.",
+      "triangles": 4126,
+      "dimensionsMm": [
+        29.0,
+        20.0,
+        34.0
+      ],
+      "center": [
+        11.202373331824594,
+        -0.05469230982619543,
+        198.07332642723708
+      ],
+      "color": [
+        0.2862749993801117,
+        0.2862749993801117,
+        0.2862749993801117,
+        1.0
+      ],
+      "download": "/models/parts-mm/xl330.stl"
+    },
+    {
+      "id": "part_030",
+      "name": "Neck root",
+      "mesh": "neck",
+      "body": "neck",
+      "group": "Head & neck",
+      "kind": "Structure",
+      "description": "Base of the neck pitch chain.",
+      "triangles": 1468,
+      "dimensionsMm": [
+        2.0,
+        20.0,
+        11.0
+      ],
+      "center": [
+        17.448694652120604,
+        12.500000047497453,
+        180.91352328075808
+      ],
+      "color": [
+        0.6745100021362305,
+        0.6392160058021545,
+        0.6039220094680786,
+        1.0
+      ],
+      "download": "/models/parts-mm/neck.stl"
+    },
+    {
+      "id": "part_031",
+      "name": "Neck pitch link",
+      "mesh": "neck_pitch",
+      "body": "neck_pitch",
+      "group": "Head & neck",
+      "kind": "Structure",
+      "description": "Link joining the neck base to the head pitch mechanism.",
+      "triangles": 7120,
+      "dimensionsMm": [
+        35.0,
+        18.0,
+        27.69
+      ],
+      "center": [
+        8.897353271404771,
+        6.376570876821442e-08,
+        212.94182960090055
+      ],
+      "color": [
+        0.34902000427246094,
+        0.37647101283073425,
+        0.4000000059604645,
+        1.0
+      ],
+      "download": "/models/parts-mm/neck_pitch.stl"
+    },
+    {
+      "id": "part_032",
+      "name": "22 \u00d7 16 \u00d7 4 bearing",
+      "mesh": "seeed_bearing__configuration__22x16x4",
+      "body": "neck_pitch",
+      "group": "Head & neck",
+      "kind": "Hardware",
+      "description": "Thin-section bearing represented in the source CAD. Confirm the seat and actual bearing fit before ordering.",
+      "triangles": 20970,
+      "dimensionsMm": [
+        22.0,
+        22.0,
+        4.0
+      ],
+      "center": [
+        8.896328100671973,
+        0.0008539188825436645,
+        223.19914920660966
+      ],
+      "color": [
+        0.8117650151252747,
+        0.8588240146636963,
+        0.8980389833450317,
+        1.0
+      ],
+      "download": "/models/parts-mm/seeed_bearing__configuration__22x16x4.stl"
+    },
+    {
+      "id": "part_033",
+      "name": "Head yaw\u2013roll frame",
+      "mesh": "yaw_roll_motion",
+      "body": "yaw_roll_motion",
+      "group": "Head & neck",
+      "kind": "Structure",
+      "description": "Compact frame supporting the head yaw and roll axes.",
+      "triangles": 5814,
+      "dimensionsMm": [
+        34.0,
+        35.9,
+        22.5
+      ],
+      "center": [
+        8.27235275119963,
+        -4.448593102705516,
+        243.65090243680748
+      ],
+      "color": [
+        0.1294119954109192,
+        0.1529410034418106,
+        0.1294119954109192,
+        1.0
+      ],
+      "download": "/models/parts-mm/yaw_roll_motion.stl"
+    },
+    {
+      "id": "part_034",
+      "name": "Dynamixel XL330",
+      "mesh": "xl330",
+      "body": "yaw_roll_motion",
+      "group": "Head & neck",
+      "kind": "Actuator",
+      "description": "Smart servo on the 1 Mbps TTL bus. Fifteen physical servos: fourteen policy joints plus the independently controlled mouth.",
+      "triangles": 4126,
+      "dimensionsMm": [
+        29.0,
+        20.0,
+        34.0
+      ],
+      "center": [
+        8.89738863297922,
+        -6.738692265709548,
+        237.65333943679903
+      ],
+      "color": [
+        0.2862749993801117,
+        0.2862749993801117,
+        0.2862749993801117,
+        1.0
+      ],
+      "download": "/models/parts-mm/xl330.stl"
+    },
+    {
+      "id": "part_035",
+      "name": "22 \u00d7 16 \u00d7 4 bearing",
+      "mesh": "seeed_bearing__configuration__22x16x4",
+      "body": "yaw_roll_motion",
+      "group": "Head & neck",
+      "kind": "Hardware",
+      "description": "Thin-section bearing represented in the source CAD. Confirm the seat and actual bearing fit before ordering.",
+      "triangles": 20970,
+      "dimensionsMm": [
+        22.0,
+        22.0,
+        4.0
+      ],
+      "center": [
+        -9.102109287355603,
+        0.0008539188825433603,
+        237.59970765931007
+      ],
+      "color": [
+        0.8117650151252747,
+        0.8588240146636963,
+        0.8980389833450317,
+        1.0
+      ],
+      "download": "/models/parts-mm/seeed_bearing__configuration__22x16x4.stl"
+    },
+    {
+      "id": "part_036",
+      "name": "22 \u00d7 16 \u00d7 4 bearing",
+      "mesh": "seeed_bearing__configuration__22x16x4",
+      "body": "yaw_roll_motion",
+      "group": "Head & neck",
+      "kind": "Hardware",
+      "description": "Thin-section bearing represented in the source CAD. Confirm the seat and actual bearing fit before ordering.",
+      "triangles": 20970,
+      "dimensionsMm": [
+        22.0,
+        22.0,
+        4.0
+      ],
+      "center": [
+        24.89789071264468,
+        0.0008539188825437313,
+        237.59970765930993
+      ],
+      "color": [
+        0.8117650151252747,
+        0.8588240146636963,
+        0.8980389833450317,
+        1.0
+      ],
+      "download": "/models/parts-mm/seeed_bearing__configuration__22x16x4.stl"
+    },
+    {
+      "id": "part_037",
+      "name": "Camera lens",
+      "mesh": "lens",
+      "body": "jaw_soft",
+      "group": "Head & neck",
+      "kind": "Electronics",
+      "description": "Wide-angle lens at the front of the head; verify compatibility with the actual camera module.",
+      "triangles": 1872,
+      "dimensionsMm": [
+        16.94,
+        18.92,
+        16.94
+      ],
+      "center": [
+        63.87203603732806,
+        -0.09137780000000348,
+        253.09864712697342
+      ],
+      "color": [
+        0.2627449929714203,
+        0.282353013753891,
+        0.3019610047340393,
+        1.0
+      ],
+      "download": "/models/parts-mm/lens.stl"
+    },
+    {
+      "id": "part_038",
+      "name": "Face panel",
+      "mesh": "face_part",
+      "body": "jaw_soft",
+      "group": "Head & neck",
+      "kind": "Shell",
+      "description": "Front face around the camera and beak.",
+      "triangles": 11412,
+      "dimensionsMm": [
+        87.65,
+        12.5,
+        44.63
+      ],
+      "center": [
+        62.33606778085195,
+        0.6854602264825395,
+        252.45173626662634
+      ],
+      "color": [
+        0.6745100021362305,
+        0.6392160058021545,
+        0.6039220094680786,
+        1.0
+      ],
+      "download": "/models/parts-mm/face_part.stl"
+    },
+    {
+      "id": "part_039",
+      "name": "Dynamixel XL330",
+      "mesh": "xl330",
+      "body": "jaw_soft",
+      "group": "Head & neck",
+      "kind": "Actuator",
+      "description": "Smart servo on the 1 Mbps TTL bus. Fifteen physical servos: fourteen policy joints plus the independently controlled mouth.",
+      "triangles": 4126,
+      "dimensionsMm": [
+        29.0,
+        20.0,
+        34.0
+      ],
+      "center": [
+        15.736080898717866,
+        25.44530769017375,
+        240.5986471269441
+      ],
+      "color": [
+        0.2862749993801117,
+        0.2862749993801117,
+        0.2862749993801117,
+        1.0
+      ],
+      "download": "/models/parts-mm/xl330.stl"
+    },
+    {
+      "id": "part_040",
+      "name": "Soft lower beak",
+      "mesh": "jaw_soft",
+      "body": "jaw_soft",
+      "group": "Head & neck",
+      "kind": "Soft part",
+      "description": "Compliant lower beak. Material hardness and print orientation require physical validation.",
+      "triangles": 6726,
+      "dimensionsMm": [
+        87.67,
+        32.23,
+        8.44
+      ],
+      "center": [
+        51.81448400700864,
+        1.551531287330621e-05,
+        226.19212989756969
+      ],
+      "color": [
+        0.8509799838066101,
+        0.756862998008728,
+        0.8666669726371765,
+        1.0
+      ],
+      "download": "/models/parts-mm/jaw_soft.stl"
+    },
+    {
+      "id": "part_041",
+      "name": "Servo support",
+      "mesh": "motor_support",
+      "body": "jaw_soft",
+      "group": "Head & neck",
+      "kind": "Structure",
+      "description": "Printed servo mount. Trial-fit one actual XL330 before duplicating it.",
+      "triangles": 3616,
+      "dimensionsMm": [
+        73.5,
+        54.2,
+        18.8
+      ],
+      "center": [
+        8.22444047942931,
+        -1.9760006264162564,
+        244.3702061142061
+      ],
+      "color": [
+        0.1294119954109192,
+        0.1529410034418106,
+        0.1294119954109192,
+        1.0
+      ],
+      "download": "/models/parts-mm/motor_support.stl"
+    },
+    {
+      "id": "part_042",
+      "name": "Upper head shell",
+      "mesh": "top_head_shell",
+      "body": "jaw_soft",
+      "group": "Head & neck",
+      "kind": "Shell",
+      "description": "Upper protective cover around the head electronics and camera. Check openings, fasteners and cable access before printing.",
+      "triangles": 16120,
+      "dimensionsMm": [
+        91.76,
+        122.69,
+        46.34
+      ],
+      "center": [
+        16.14881763921585,
+        0.008859683487420028,
+        259.03991393369586
+      ],
+      "color": [
+        0.8509799838066101,
+        0.8509799838066101,
+        0.8392159938812256,
+        1.0
+      ],
+      "download": "/models/parts-mm/top_head_shell.stl"
+    },
+    {
+      "id": "part_043",
+      "name": "Dynamixel XL330",
+      "mesh": "xl330",
+      "body": "jaw_soft",
+      "group": "Head & neck",
+      "kind": "Actuator",
+      "description": "Smart servo on the 1 Mbps TTL bus. Fifteen physical servos: fourteen policy joints plus the independently controlled mouth.",
+      "triangles": 4126,
+      "dimensionsMm": [
+        29.0,
+        20.0,
+        34.0
+      ],
+      "center": [
+        -23.557303676817856,
+        -6.738692265709545,
+        237.5986471269442
+      ],
+      "color": [
+        0.2862749993801117,
+        0.2862749993801117,
+        0.2862749993801117,
+        1.0
+      ],
+      "download": "/models/parts-mm/xl330.stl"
+    },
+    {
+      "id": "part_044",
+      "name": "Joint bearing",
+      "mesh": "seeed_bearing__configuration_default",
+      "body": "jaw_soft",
+      "group": "Head & neck",
+      "kind": "Hardware",
+      "description": "Bearing geometry from the original assembly. Measure dimensions and fit; the filename does not establish a supplier specification.",
+      "triangles": 20970,
+      "dimensionsMm": [
+        15.0,
+        15.0,
+        3.0
+      ],
+      "center": [
+        8.996984148441202,
+        -38.50091640101032,
+        240.795908958154
+      ],
+      "color": [
+        0.8117650151252747,
+        0.8588240146636963,
+        0.8980389833450317,
+        1.0
+      ],
+      "download": "/models/parts-mm/seeed_bearing__configuration_default.stl"
+    },
+    {
+      "id": "part_045",
+      "name": "Robot interface HAT",
+      "mesh": "elec_rpi_robot_hat_pcb",
+      "body": "jaw_soft",
+      "group": "Head & neck",
+      "kind": "Electronics",
+      "description": "Power conversion, half-duplex Dynamixel interface, audio and expansion. Use the pinned KiCad production files for fabrication dimensions.",
+      "triangles": 18856,
+      "dimensionsMm": [
+        65.03,
+        30.03,
+        0.84
+      ],
+      "center": [
+        42.47738863634235,
+        -0.0843326959557699,
+        253.1308236109427
+      ],
+      "color": [
+        0.31372499465942383,
+        0.48627498745918274,
+        0.4117650091648102,
+        1.0
+      ],
+      "download": "/models/parts-mm/elec_rpi_robot_hat_pcb.stl"
+    },
+    {
+      "id": "part_046",
+      "name": "Soft upper beak",
+      "mesh": "soft_mouth_top",
+      "body": "jaw_soft",
+      "group": "Head & neck",
+      "kind": "Soft part",
+      "description": "Compliant contact surface on the upper beak.",
+      "triangles": 7870,
+      "dimensionsMm": [
+        87.82,
+        32.57,
+        3.28
+      ],
+      "center": [
+        51.59511696562115,
+        1.3906214186025038e-05,
+        230.95694841545188
+      ],
+      "color": [
+        0.8509799838066101,
+        0.756862998008728,
+        0.8666669726371765,
+        1.0
+      ],
+      "download": "/models/parts-mm/soft_mouth_top.stl"
+    },
+    {
+      "id": "part_047",
+      "name": "Eye insert",
+      "mesh": "noenoeil",
+      "body": "jaw_soft",
+      "group": "Head & neck",
+      "kind": "Structure",
+      "description": "Small face insert from the original geometry.",
+      "triangles": 984,
+      "dimensionsMm": [
+        30.0,
+        9.5,
+        30.0
+      ],
+      "center": [
+        68.04426754166104,
+        -0.09137780004446584,
+        253.09864724352815
+      ],
+      "color": [
+        0.9568629860877991,
+        0.6862750053405762,
+        0.137254998087883,
+        1.0
+      ],
+      "download": "/models/parts-mm/noenoeil.stl"
+    },
+    {
+      "id": "part_048",
+      "name": "Jaw structure",
+      "mesh": "jaw",
+      "body": "jaw_soft",
+      "group": "Head & neck",
+      "kind": "Structure",
+      "description": "Rigid beak structure. The walking MJCF fixes this assembly; the physical mouth has its own servo.",
+      "triangles": 9918,
+      "dimensionsMm": [
+        91.42,
+        68.71,
+        29.45
+      ],
+      "center": [
+        41.72495302838527,
+        -0.08454212211249662,
+        226.1384738036003
+      ],
+      "color": [
+        1.0,
+        0.4039219915866852,
+        0.12156900018453598,
+        1.0
+      ],
+      "download": "/models/parts-mm/jaw.stl"
+    },
+    {
+      "id": "part_049",
+      "name": "Lower head shell",
+      "mesh": "bottom_head_shell",
+      "body": "jaw_soft",
+      "group": "Head & neck",
+      "kind": "Shell",
+      "description": "Lower half of the head enclosure and attachment points for the face and neck assembly.",
+      "triangles": 20970,
+      "dimensionsMm": [
+        91.76,
+        116.75,
+        20.14
+      ],
+      "center": [
+        10.251801217787287,
+        -1.0560446580345149,
+        228.24739220967982
+      ],
+      "color": [
+        1.0,
+        0.4039219915866852,
+        0.12156900018453598,
+        1.0
+      ],
+      "download": "/models/parts-mm/bottom_head_shell.stl"
+    },
+    {
+      "id": "part_050",
+      "name": "M12 lens holder",
+      "mesh": "m12_lens_holder",
+      "body": "jaw_soft",
+      "group": "Head & neck",
+      "kind": "Structure",
+      "description": "Lens mounting reference. Validate threads, camera alignment and focus travel in CAD.",
+      "triangles": 10992,
+      "dimensionsMm": [
+        24.0,
+        14.8,
+        16.0
+      ],
+      "center": [
+        53.08753890550373,
+        -0.09137774627610083,
+        253.11629186843354
+      ],
+      "color": [
+        0.2627449929714203,
+        0.282353013753891,
+        0.3019610047340393,
+        1.0
+      ],
+      "download": "/models/parts-mm/m12_lens_holder.stl"
+    },
+    {
+      "id": "part_051",
+      "name": "Main computer envelope",
+      "mesh": "pcb__raspberry_pi_zero_2_w",
+      "body": "jaw_soft",
+      "group": "Head & neck",
+      "kind": "Electronics",
+      "description": "The mesh is named Raspberry Pi Zero 2 W. The current runtime targets Radxa Zero 3W; verify actual board dimensions and connectors.",
+      "triangles": 20970,
+      "dimensionsMm": [
+        65.0,
+        1.6,
+        30.0
+      ],
+      "center": [
+        51.00738824225389,
+        -0.011362607831727415,
+        253.40033686337543
+      ],
+      "color": [
+        0.49803900718688965,
+        0.49803900718688965,
+        0.49803900718688965,
+        1.0
+      ],
+      "download": "/models/parts-mm/pcb__raspberry_pi_zero_2_w.stl"
+    },
+    {
+      "id": "part_052",
+      "name": "Speaker",
+      "mesh": "speaker",
+      "body": "jaw_soft",
+      "group": "Head & neck",
+      "kind": "Electronics",
+      "description": "Audio output component. Optional for the first walking build.",
+      "triangles": 12,
+      "dimensionsMm": [
+        35.0,
+        25.0,
+        7.0
+      ],
+      "center": [
+        -22.52521118072711,
+        0.7140000745058008,
+        251.09864723500675
+      ],
+      "color": [
+        0.2941179871559143,
+        0.2901960015296936,
+        0.2901960015296936,
+        1.0
+      ],
+      "download": "/models/parts-mm/speaker.stl"
+    },
+    {
+      "id": "part_053",
+      "name": "Hip yaw\u2013roll bracket",
+      "mesh": "yaw2roll",
+      "body": "bearing_roll",
+      "group": "Right leg",
+      "kind": "Structure",
+      "description": "Transfers the hip yaw axis to the hip roll joint.",
+      "triangles": 12404,
+      "dimensionsMm": [
+        23.0,
+        25.8,
+        20.5
+      ],
+      "center": [
+        1.9910447641274884,
+        -17.500011093147165,
+        116.17421218539717
+      ],
+      "color": [
+        0.1294119954109192,
+        0.1529410034418106,
+        0.1294119954109192,
+        1.0
+      ],
+      "download": "/models/parts-mm/yaw2roll.stl"
+    },
+    {
+      "id": "part_054",
+      "name": "Dynamixel XL330",
+      "mesh": "xl330",
+      "body": "bearing_roll",
+      "group": "Right leg",
+      "kind": "Actuator",
+      "description": "Smart servo on the 1 Mbps TTL bus. Fifteen physical servos: fourteen policy joints plus the independently controlled mouth.",
+      "triangles": 4126,
+      "dimensionsMm": [
+        29.0,
+        20.0,
+        34.0
+      ],
+      "center": [
+        5.9453076901738084,
+        -17.499999999970854,
+        100.76130773429057
+      ],
+      "color": [
+        0.2862749993801117,
+        0.2862749993801117,
+        0.2862749993801117,
+        1.0
+      ],
+      "download": "/models/parts-mm/xl330.stl"
+    },
+    {
+      "id": "part_055",
+      "name": "Roll bearing retainer",
+      "mesh": "bearing_roll",
+      "body": "bearing_roll",
+      "group": "Right leg",
+      "kind": "Structure",
+      "description": "Retains the bearing on the roll axis.",
+      "triangles": 2420,
+      "dimensionsMm": [
+        23.0,
+        3.0,
+        40.0
+      ],
+      "center": [
+        17.973369927874217,
+        -17.50000092274392,
+        101.6070510608045
+      ],
+      "color": [
+        0.1294119954109192,
+        0.1529410034418106,
+        0.1294119954109192,
+        1.0
+      ],
+      "download": "/models/parts-mm/bearing_roll.stl"
+    },
+    {
+      "id": "part_056",
+      "name": "22 \u00d7 16 \u00d7 4 bearing",
+      "mesh": "seeed_bearing__configuration__22x16x4",
+      "body": "bearing_roll",
+      "group": "Right leg",
+      "kind": "Hardware",
+      "description": "Thin-section bearing represented in the source CAD. Confirm the seat and actual bearing fit before ordering.",
+      "triangles": 20970,
+      "dimensionsMm": [
+        22.0,
+        22.0,
+        4.0
+      ],
+      "center": [
+        20.50050207963607,
+        -17.499146081117573,
+        107.50106053233594
+      ],
+      "color": [
+        0.8117650151252747,
+        0.8588240146636963,
+        0.8980389833450317,
+        1.0
+      ],
+      "download": "/models/parts-mm/seeed_bearing__configuration__22x16x4.stl"
+    },
+    {
+      "id": "part_057",
+      "name": "Hip roll link",
+      "mesh": "hip_l",
+      "body": "hip_l_2",
+      "group": "Right leg",
+      "kind": "Structure",
+      "description": "Hip roll link. Used on both sides with distinct assembly transforms.",
+      "triangles": 20970,
+      "dimensionsMm": [
+        32.45,
+        34.5,
+        19.0
+      ],
+      "center": [
+        16.003482073455007,
+        -29.143249808385598,
+        106.48119338977492
+      ],
+      "color": [
+        0.6745100021362305,
+        0.6392160058021545,
+        0.6039220094680786,
+        1.0
+      ],
+      "download": "/models/parts-mm/hip_l.stl"
+    },
+    {
+      "id": "part_058",
+      "name": "22 \u00d7 16 \u00d7 4 bearing",
+      "mesh": "seeed_bearing__configuration__22x16x4",
+      "body": "hip_l_2",
+      "group": "Right leg",
+      "kind": "Hardware",
+      "description": "Thin-section bearing represented in the source CAD. Confirm the seat and actual bearing fit before ordering.",
+      "triangles": 20970,
+      "dimensionsMm": [
+        22.0,
+        22.0,
+        4.0
+      ],
+      "center": [
+        4.0008539188825685,
+        -40.41300344411115,
+        105.49566215167683
+      ],
+      "color": [
+        0.8117650151252747,
+        0.8588240146636963,
+        0.8980389833450317,
+        1.0
+      ],
+      "download": "/models/parts-mm/seeed_bearing__configuration__22x16x4.stl"
+    },
+    {
+      "id": "part_059",
+      "name": "Dynamixel XL330",
+      "mesh": "xl330",
+      "body": "upper_leg_right",
+      "group": "Right leg",
+      "kind": "Actuator",
+      "description": "Smart servo on the 1 Mbps TTL bus. Fifteen physical servos: fourteen policy joints plus the independently controlled mouth.",
+      "triangles": 4126,
+      "dimensionsMm": [
+        29.0,
+        20.0,
+        34.0
+      ],
+      "center": [
+        -21.34494772758377,
+        -52.33916398273482,
+        74.83305048945495
+      ],
+      "color": [
+        0.2862749993801117,
+        0.2862749993801117,
+        0.2862749993801117,
+        1.0
+      ],
+      "download": "/models/parts-mm/xl330.stl"
+    },
+    {
+      "id": "part_060",
+      "name": "22 \u00d7 16 \u00d7 4 bearing",
+      "mesh": "seeed_bearing__configuration__22x16x4",
+      "body": "upper_leg_right",
+      "group": "Right leg",
+      "kind": "Hardware",
+      "description": "Thin-section bearing represented in the source CAD. Confirm the seat and actual bearing fit before ordering.",
+      "triangles": 20970,
+      "dimensionsMm": [
+        22.0,
+        22.0,
+        4.0
+      ],
+      "center": [
+        -18.365707854775696,
+        -37.31350116927749,
+        70.08186935663622
+      ],
+      "color": [
+        0.8117650151252747,
+        0.8588240146636963,
+        0.8980389833450317,
+        1.0
+      ],
+      "download": "/models/parts-mm/seeed_bearing__configuration__22x16x4.stl"
+    },
+    {
+      "id": "part_061",
+      "name": "Thigh reinforcement",
+      "mesh": "upper_leg_rigidity_plate",
+      "body": "upper_leg_right",
+      "group": "Right leg",
+      "kind": "Structure",
+      "description": "Stiffening plate for the upper leg assembly.",
+      "triangles": 3600,
+      "dimensionsMm": [
+        1.0,
+        45.0,
+        58.06
+      ],
+      "center": [
+        -17.43965747565683,
+        -41.63107428216539,
+        90.74536238533739
+      ],
+      "color": [
+        0.6745100021362305,
+        0.6392160058021545,
+        0.6039220094680786,
+        1.0
+      ],
+      "download": "/models/parts-mm/upper_leg_rigidity_plate.stl"
+    },
+    {
+      "id": "part_062",
+      "name": "Right upper leg",
+      "mesh": "upper_leg_right",
+      "body": "upper_leg_right",
+      "group": "Right leg",
+      "kind": "Structure",
+      "description": "Load-bearing right thigh link between hip and knee.",
+      "triangles": 12250,
+      "dimensionsMm": [
+        28.0,
+        47.66,
+        61.0
+      ],
+      "center": [
+        -18.55794726579499,
+        -62.29920688905341,
+        89.9774736205409
+      ],
+      "color": [
+        0.8509799838066101,
+        0.8509799838066101,
+        0.8392159938812256,
+        1.0
+      ],
+      "download": "/models/parts-mm/upper_leg_right.stl"
+    },
+    {
+      "id": "part_063",
+      "name": "Dynamixel XL330",
+      "mesh": "xl330",
+      "body": "upper_leg_right",
+      "group": "Right leg",
+      "kind": "Actuator",
+      "description": "Smart servo on the 1 Mbps TTL bus. Fifteen physical servos: fourteen policy joints plus the independently controlled mouth.",
+      "triangles": 4126,
+      "dimensionsMm": [
+        29.0,
+        20.0,
+        34.0
+      ],
+      "center": [
+        -2.0444911748307604,
+        -54.65194406551451,
+        101.2580398489004
+      ],
+      "color": [
+        0.2862749993801117,
+        0.2862749993801117,
+        0.2862749993801117,
+        1.0
+      ],
+      "download": "/models/parts-mm/xl330.stl"
+    },
+    {
+      "id": "part_064",
+      "name": "Dynamixel XL330",
+      "mesh": "xl330",
+      "body": "leg_2",
+      "group": "Right leg",
+      "kind": "Actuator",
+      "description": "Smart servo on the 1 Mbps TTL bus. Fifteen physical servos: fourteen policy joints plus the independently controlled mouth.",
+      "triangles": 4126,
+      "dimensionsMm": [
+        29.0,
+        20.0,
+        34.0
+      ],
+      "center": [
+        -2.933368154733153,
+        -43.957909350764176,
+        37.67301261957506
+      ],
+      "color": [
+        0.2862749993801117,
+        0.2862749993801117,
+        0.2862749993801117,
+        1.0
+      ],
+      "download": "/models/parts-mm/xl330.stl"
+    },
+    {
+      "id": "part_065",
+      "name": "Lower leg link",
+      "mesh": "leg",
+      "body": "leg_2",
+      "group": "Right leg",
+      "kind": "Structure",
+      "description": "Knee-to-ankle linkage. Check its full travel and wire clearance.",
+      "triangles": 14776,
+      "dimensionsMm": [
+        7.95,
+        20.0,
+        58.0
+      ],
+      "center": [
+        -10.81274906742223,
+        -32.16556084507894,
+        54.954364862095964
+      ],
+      "color": [
+        0.6745100021362305,
+        0.6392160058021545,
+        0.6039220094680786,
+        1.0
+      ],
+      "download": "/models/parts-mm/leg.stl"
+    },
+    {
+      "id": "part_066",
+      "name": "Right ankle",
+      "mesh": "ankle_right",
+      "body": "ankle_right",
+      "group": "Right leg",
+      "kind": "Structure",
+      "description": "Right ankle link and foot attachment.",
+      "triangles": 4976,
+      "dimensionsMm": [
+        39.49,
+        36.5,
+        25.5
+      ],
+      "center": [
+        1.8833818822766213,
+        -43.61073120984355,
+        24.086303615413467
+      ],
+      "color": [
+        1.0,
+        0.4039219915866852,
+        0.12156900018453598,
+        1.0
+      ],
+      "download": "/models/parts-mm/ankle_right.stl"
+    },
+    {
+      "id": "part_067",
+      "name": "Right sole",
+      "mesh": "sole_right",
+      "body": "ankle_right",
+      "group": "Right leg",
+      "kind": "Soft part",
+      "description": "Compliant ground-contact layer. Measure friction and compliance for sim-to-real tuning.",
+      "triangles": 15902,
+      "dimensionsMm": [
+        41.1,
+        54.0,
+        12.91
+      ],
+      "center": [
+        6.803228938895803,
+        -40.898630547190635,
+        12.350547683595233
+      ],
+      "color": [
+        0.9568629860877991,
+        0.6862750053405762,
+        0.137254998087883,
+        1.0
+      ],
+      "download": "/models/parts-mm/sole_right.stl"
+    },
+    {
+      "id": "part_068",
+      "name": "Joint bearing",
+      "mesh": "seeed_bearing__configuration_default",
+      "body": "ankle_right",
+      "group": "Right leg",
+      "kind": "Hardware",
+      "description": "Bearing geometry from the original assembly. Measure dimensions and fit; the filename does not establish a supplier specification.",
+      "triangles": 20970,
+      "dimensionsMm": [
+        15.0,
+        15.0,
+        3.0
+      ],
+      "center": [
+        0.01551645687285775,
+        -27.34648037762142,
+        33.04195943935483
+      ],
+      "color": [
+        0.8117650151252747,
+        0.8588240146636963,
+        0.8980389833450317,
+        1.0
+      ],
+      "download": "/models/parts-mm/seeed_bearing__configuration_default.stl"
+    },
+    {
+      "id": "part_069",
+      "name": "Right foot",
+      "mesh": "foot_right",
+      "body": "ankle_right",
+      "group": "Right leg",
+      "kind": "Structure",
+      "description": "Rigid right foot. Its contact geometry and sole friction affect the trained gait.",
+      "triangles": 19952,
+      "dimensionsMm": [
+        40.09,
+        54.0,
+        16.91
+      ],
+      "center": [
+        7.923010928958546,
+        -41.36092756691371,
+        16.404181381790163
+      ],
+      "color": [
+        1.0,
+        0.4039219915866852,
+        0.12156900018453598,
+        1.0
+      ],
+      "download": "/models/parts-mm/foot_right.stl"
+    }
+  ],
+  "bodies": [
+    {
+      "name": "trunk_base",
+      "group": "Torso",
+      "position": [
+        0.0,
+        0.0,
+        0.125
+      ],
+      "quaternion": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "massGrams": 199.224
+    },
+    {
+      "name": "yaw2roll",
+      "group": "Left leg",
+      "position": [
+        0.006,
+        0.0175,
+        0.12
+      ],
+      "quaternion": [
+        0.0,
+        -0.7071067811865475,
+        -0.7071067811865475,
+        0.0
+      ],
+      "massGrams": 23.041
+    },
+    {
+      "name": "hip_l",
+      "group": "Left leg",
+      "position": [
+        0.0225,
+        0.0175,
+        0.1075
+      ],
+      "quaternion": [
+        -0.5213418156651406,
+        -0.4777056742796492,
+        -0.5213418156651406,
+        -0.4777056742796492
+      ],
+      "massGrams": 6.189
+    },
+    {
+      "name": "upper_leg_left",
+      "group": "Left leg",
+      "position": [
+        0.004000000000000007,
+        0.04240479435824926,
+        0.10532027112389744
+      ],
+      "quaternion": [
+        -0.5736577689937203,
+        0.6260586778848332,
+        -0.38941637018382463,
+        -0.3568223459245454
+      ],
+      "massGrams": 48.207
+    },
+    {
+      "name": "leg",
+      "group": "Left leg",
+      "position": [
+        -0.018366004980680712,
+        0.03532050159891731,
+        0.07025496773558723
+      ],
+      "quaternion": [
+        -0.16557165926013206,
+        -0.15171336492076903,
+        -0.6583224721839337,
+        0.7184570990476032
+      ],
+      "massGrams": 21.584
+    },
+    {
+      "name": "ankle_left",
+      "group": "Left leg",
+      "position": [
+        1.5920941498694108e-05,
+        0.057928893677028186,
+        0.030368060020975918
+      ],
+      "quaternion": [
+        7.235580218312165e-09,
+        -7.896516218686145e-09,
+        -0.7372886663458559,
+        -0.6755778433888641
+      ],
+      "massGrams": 30.025
+    },
+    {
+      "name": "neck",
+      "group": "Head & neck",
+      "position": [
+        0.026,
+        0.0145,
+        0.1574215
+      ],
+      "quaternion": [
+        0.12279969204005954,
+        0.12279969204005954,
+        0.6963621440277081,
+        -0.6963621440277081
+      ],
+      "massGrams": 36.841
+    },
+    {
+      "name": "neck_pitch",
+      "group": "Head & neck",
+      "position": [
+        0.008897388633008367,
+        0.0145,
+        0.20440554712697329
+      ],
+      "quaternion": [
+        1.3877787807814457e-17,
+        -1.3877787807814457e-17,
+        -0.7071067811865476,
+        -0.7071067811865476
+      ],
+      "massGrams": 5.72
+    },
+    {
+      "name": "yaw_roll_motion",
+      "group": "Head & neck",
+      "position": [
+        0.008897388633008367,
+        -3.469446951953614e-18,
+        0.2230986471269733
+      ],
+      "quaternion": [
+        -1.0,
+        0.0,
+        -1.9626155733547187e-17,
+        0.0
+      ],
+      "massGrams": 48.6
+    },
+    {
+      "name": "jaw_soft",
+      "group": "Head & neck",
+      "position": [
+        -0.009002611366991632,
+        -3.469446951953614e-18,
+        0.23759864712697332
+      ],
+      "quaternion": [
+        -0.7071067811865475,
+        0.0,
+        0.7071067811865475,
+        0.0
+      ],
+      "massGrams": 188.766
+    },
+    {
+      "name": "bearing_roll",
+      "group": "Right leg",
+      "position": [
+        0.006,
+        -0.0175,
+        0.12
+      ],
+      "quaternion": [
+        0.0,
+        -0.7071067811865475,
+        -0.7071067811865475,
+        0.0
+      ],
+      "massGrams": 23.041
+    },
+    {
+      "name": "hip_l_2",
+      "group": "Right leg",
+      "position": [
+        0.0225,
+        -0.0175,
+        0.1075
+      ],
+      "quaternion": [
+        0.5213418156651406,
+        -0.4777056742796492,
+        0.5213418156651406,
+        -0.4777056742796492
+      ],
+      "massGrams": 6.189
+    },
+    {
+      "name": "upper_leg_right",
+      "group": "Right leg",
+      "position": [
+        0.004000000000000007,
+        -0.04240479435824926,
+        0.10532027112389744
+      ],
+      "quaternion": [
+        -0.3568223459245454,
+        -0.38941637018382463,
+        0.6260586778848332,
+        -0.5736577689937203
+      ],
+      "massGrams": 48.207
+    },
+    {
+      "name": "leg_2",
+      "group": "Right leg",
+      "position": [
+        -0.01836600498068071,
+        -0.03532050159891731,
+        0.07025496773558723
+      ],
+      "quaternion": [
+        0.39094904369302746,
+        -0.35822673515664677,
+        -0.5727818334208569,
+        -0.6251027297633232
+      ],
+      "massGrams": 21.584
+    },
+    {
+      "name": "ankle_right",
+      "group": "Right leg",
+      "position": [
+        1.5920941498697577e-05,
+        -0.057928893677028186,
+        0.030368060020975918
+      ],
+      "quaternion": [
+        -0.675577843388864,
+        -0.7372886663458558,
+        -7.896516135419418e-09,
+        7.235580246067741e-09
+      ],
+      "massGrams": 30.025
+    }
+  ],
+  "joints": [
+    {
+      "name": "left_hip_yaw",
+      "actionIndex": 0,
+      "servoId": 20,
+      "body": "yaw2roll",
+      "home": 0.0,
+      "range": [
+        -0.4363323129985824,
+        0.5235987755982988
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "left_hip_roll",
+      "actionIndex": 1,
+      "servoId": 21,
+      "body": "hip_l",
+      "home": -0.08730000257492065,
+      "range": [
+        -0.3839724354386992,
+        0.38397243543880577
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "left_hip_pitch",
+      "actionIndex": 2,
+      "servoId": 22,
+      "body": "upper_leg_left",
+      "home": -0.4578999876976013,
+      "range": [
+        -1.570796326794949,
+        1.5707963267948442
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "left_knee",
+      "actionIndex": 3,
+      "servoId": 23,
+      "body": "leg",
+      "home": -0.004900000058114529,
+      "range": [
+        -1.5707963267948983,
+        1.5707963267948948
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "left_ankle",
+      "actionIndex": 4,
+      "servoId": 24,
+      "body": "ankle_left",
+      "home": 0.453000009059906,
+      "range": [
+        -1.5707963267949063,
+        1.5707963267948868
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "neck_pitch",
+      "actionIndex": 5,
+      "servoId": 30,
+      "body": "neck",
+      "home": 0.3490999937057495,
+      "range": [
+        -1.5707963267948974,
+        1.0471975511965967
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "head_pitch",
+      "actionIndex": 6,
+      "servoId": 31,
+      "body": "neck_pitch",
+      "home": 0.3490999937057495,
+      "range": [
+        -1.5707963267948966,
+        1.5707963267948966
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "head_yaw",
+      "actionIndex": 7,
+      "servoId": 32,
+      "body": "yaw_roll_motion",
+      "home": 0.0,
+      "range": [
+        -2.9670597283903613,
+        2.9670597283903595
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "head_roll",
+      "actionIndex": 8,
+      "servoId": 33,
+      "body": "jaw_soft",
+      "home": 0.0,
+      "range": [
+        -0.43633231299858327,
+        0.4363323129985815
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "right_hip_yaw",
+      "actionIndex": 9,
+      "servoId": 10,
+      "body": "bearing_roll",
+      "home": 0.0,
+      "range": [
+        -0.523598775598297,
+        0.43633231299858416
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "right_hip_roll",
+      "actionIndex": 10,
+      "servoId": 11,
+      "body": "hip_l_2",
+      "home": 0.08730000257492065,
+      "range": [
+        -0.3839724354387507,
+        0.38397243543875426
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "right_hip_pitch",
+      "actionIndex": 11,
+      "servoId": 12,
+      "body": "upper_leg_right",
+      "home": 0.4578999876976013,
+      "range": [
+        -1.57079632679494,
+        1.570796326794853
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "right_knee",
+      "actionIndex": 12,
+      "servoId": 13,
+      "body": "leg_2",
+      "home": 0.004900000058114529,
+      "range": [
+        -1.5707963267949339,
+        1.5707963267948593
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "right_ankle",
+      "actionIndex": 13,
+      "servoId": 14,
+      "body": "ankle_right",
+      "home": -0.453000009059906,
+      "range": [
+        -1.5707963267949028,
+        1.5707963267948903
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ]
+}

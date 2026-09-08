@@ -1,0 +1,201 @@
+{
+  "recordedAt": "2026-09-07T23:16:48.598967+00:00",
+  "sourceLock": {
+    "retrieved": "2026-09-08",
+    "repos": [
+      {
+        "name": "microduck_rl",
+        "url": "https://github.com/pollen-robotics/microduck_rl.git",
+        "commit": "2b25a48b08f1f17bc38c90bb03144c81fbd9ed07"
+      },
+      {
+        "name": "microduck",
+        "url": "https://github.com/pollen-robotics/microduck.git",
+        "commit": "5984efb770855432b03dafd3d879e9929981e45b"
+      },
+      {
+        "name": "replica-reference",
+        "url": "https://github.com/fanhao375/microduck-replica.git",
+        "commit": "73e2118dc0b5bf463ab7d422e5274c29adfd9ea7"
+      },
+      {
+        "name": "robot-hat",
+        "url": "https://github.com/pollen-robotics/elec_RPI_Robot_HAT.git",
+        "commit": "23eab11927f95ceca0dfa35bf182caeb7db39ea0"
+      }
+    ],
+    "policies": {
+      "repo": "pollen-robotics/microduck-policies",
+      "revision": "088524a64e2557dc453256b6071dbb9d23888802",
+      "files": [
+        {
+          "file": "alpha_ground_pick.onnx",
+          "sha256": "ffbf5109982ff999b0ba53afe86b9ae731bbec679d67fb7f8ab4c52152c88872"
+        },
+        {
+          "file": "alpha_sitstand.onnx",
+          "sha256": "c6c40e35e726eabd803d633e090d112994f469921152448367953fbaf9799bc8"
+        },
+        {
+          "file": "alpha_stand.onnx",
+          "sha256": "1569268713e40deea795dd2922dba50d3621e15a872855408b6b1b125b1c094b"
+        },
+        {
+          "file": "alpha_walking.onnx",
+          "sha256": "e36332d383997d51401897734cd3e79cf5038406feddb18b4d57ecfb141daa6c"
+        },
+        {
+          "file": "ball_kick_left.onnx",
+          "sha256": "d6928284dccd3dd61e08bf2f760effa74309fbefd97b2b31afb2a60f526d196a"
+        },
+        {
+          "file": "ball_kick_right.onnx",
+          "sha256": "147a32c388c6b19111b3ac3b550a9a6dc8b8bf267118af4d8c3712522eedb5af"
+        },
+        {
+          "file": "roller.onnx",
+          "sha256": "cf05651d2708a2f9364212e86b866c97a70ace8131c492500105e8f28bf99afd"
+        },
+        {
+          "file": "roller_crouch.onnx",
+          "sha256": "a1a084be240469c76ac9d3fa44d4792f16d4b1da60398b3ecd3cfc5e2244d990"
+        },
+        {
+          "file": "roulade.onnx",
+          "sha256": "3d60da08fc13f29c1b57f41977aa898132c0d60042100149d8e775affcbca32b"
+        },
+        {
+          "file": "manifest.json",
+          "sha256": "d0c36e7b71129dd617339c63bcb1d704eab282c8617ebf14c2013a01abfb2dda"
+        }
+      ]
+    }
+  },
+  "environment": "CPU MuJoCo 3.10.0, BAM M6 (7.4 V model only), ONNX Runtime 1.24.4",
+  "physicsHz": 200,
+  "controlHz": 50,
+  "freshGpuTraining": false,
+  "hardwareTested": false,
+  "results": [
+    {
+      "case": "stand",
+      "command": [
+        0,
+        0,
+        0
+      ],
+      "seconds": 20.0,
+      "finalPositionM": [
+        0.0030839299074229775,
+        -8.127589454173939e-05,
+        0.11621438615711929
+      ],
+      "travelM": 0.0030850007204102003,
+      "finalTiltDeg": 0.32,
+      "maxTiltDeg": 1.65,
+      "minTrunkHeightMm": 114.52,
+      "maxContacts": 6,
+      "finite": true
+    },
+    {
+      "case": "forward_030",
+      "command": [
+        0.3,
+        0,
+        0
+      ],
+      "seconds": 20.0,
+      "finalPositionM": [
+        1.7823732089118671,
+        -0.8621444031432393,
+        0.11987495404731713
+      ],
+      "travelM": 1.9799361675867226,
+      "finalTiltDeg": 3.01,
+      "maxTiltDeg": 3.88,
+      "minTrunkHeightMm": 112.85,
+      "maxContacts": 6,
+      "finite": true
+    },
+    {
+      "case": "forward_015",
+      "command": [
+        0.15,
+        0,
+        0
+      ],
+      "seconds": 20.0,
+      "finalPositionM": [
+        0.007453327875898299,
+        0.006621141062658467,
+        0.11513749492021808
+      ],
+      "travelM": 0.00996953386058068,
+      "finalTiltDeg": 0.83,
+      "maxTiltDeg": 0.92,
+      "minTrunkHeightMm": 114.63,
+      "maxContacts": 6,
+      "finite": true
+    },
+    {
+      "case": "reverse_030",
+      "command": [
+        -0.3,
+        0,
+        0
+      ],
+      "seconds": 20.0,
+      "finalPositionM": [
+        -0.0025981456938558266,
+        0.003474537124754203,
+        0.11592000454739808
+      ],
+      "travelM": 0.004338521554377341,
+      "finalTiltDeg": 2.42,
+      "maxTiltDeg": 2.42,
+      "minTrunkHeightMm": 115.42,
+      "maxContacts": 6,
+      "finite": true
+    },
+    {
+      "case": "lateral_020",
+      "command": [
+        0,
+        0.2,
+        0
+      ],
+      "seconds": 20.0,
+      "finalPositionM": [
+        0.004680638556822826,
+        0.002486128391198728,
+        0.11536607505719286
+      ],
+      "travelM": 0.005299925629397156,
+      "finalTiltDeg": 1.24,
+      "maxTiltDeg": 1.25,
+      "minTrunkHeightMm": 114.73,
+      "maxContacts": 6,
+      "finite": true
+    },
+    {
+      "case": "turn_100",
+      "command": [
+        0,
+        0,
+        1.0
+      ],
+      "seconds": 20.0,
+      "finalPositionM": [
+        -0.030069593633194495,
+        0.035116807416181534,
+        0.11917503660395164
+      ],
+      "travelM": 0.046231705834531275,
+      "finalTiltDeg": 3.29,
+      "maxTiltDeg": 4.02,
+      "minTrunkHeightMm": 114.2,
+      "maxContacts": 6,
+      "finite": true
+    }
+  ]
+}
