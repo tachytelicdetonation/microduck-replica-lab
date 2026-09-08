@@ -99,6 +99,20 @@ test("mobile navigation and layout", async ({ page }) => {
 test("physics controls pause and reset a real running simulation", async ({
   page,
 }) => {
+  // Software WebGL and MuJoCo share the runner's CPU. Give this integration
+  // test time to complete, and wait for each control response before reading state.
+  test.setTimeout(120000);
+  async function clickControl(name: string, action: string) {
+    const completed = page.waitForResponse((response) =>
+      response.url().endsWith("/api/control") &&
+      response.request().method() === "POST" &&
+      response.request().postDataJSON()?.action === action,
+    );
+    await page.getByRole("button", { name, exact: true }).click();
+    const response = await completed;
+    expect(response.ok()).toBeTruthy();
+    await response.json();
+  }
   const health = await page.request.get("/api/health");
   test.skip(
     !health.ok(),
@@ -109,20 +123,20 @@ test("physics controls pause and reset a real running simulation", async ({
   await expect(
     page.getByRole("button", { name: "Reset simulation" }),
   ).toBeEnabled();
-  await page.getByRole("button", { name: "Reset simulation" }).click();
-  await page.getByRole("button", { name: "Forward 0.30", exact: true }).click();
-  await page.getByRole("button", { name: "Run simulation" }).click();
+  await clickControl("Reset simulation", "reset");
+  await clickControl("Forward 0.30", "velocity");
+  await clickControl("Run simulation", "play");
   await expect
     .poll(
       async () => (await (await page.request.get("/api/state")).json()).time,
     )
     .toBeGreaterThan(1);
-  await page.getByRole("button", { name: "Pause", exact: true }).click();
+  await clickControl("Pause", "pause");
   let s = await (await page.request.get("/api/state")).json();
   expect(s.paused).toBe(true);
   expect(s.steps).toBeGreaterThan(50);
   expect(s.bodies).toHaveLength(15);
-  await page.getByRole("button", { name: "Reset simulation" }).click();
+  await clickControl("Reset simulation", "reset");
   s = await (await page.request.get("/api/state")).json();
   expect(s.paused).toBe(true);
   expect(s.steps).toBe(0);
